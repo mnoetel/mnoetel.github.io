@@ -1,30 +1,15 @@
-###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
-###########################################################
+title: Michael Noetel, Associate Professor, The University of Queensland
 
-############################
-# --- Required options --- #
-############################
-
-# Name of website
-title: My website
-
-# Your name to show in the footer
-author: Some Person
-
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
+author: Michael Noetel
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About         : "#about"
+  Skills        : "#skills"
+  AI Governance : "#ai"
+  Publications  : "#publications"
+  Media         : "#media"
+  Contact       : "#contact"
+  CV            : "mnoetel_resume.html"
 
 ################
 # --- Logo --- #
@@ -50,14 +35,12 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "m.noetel@uq.edu.au"
+  github: mnoetel
+#  twitter: mnoetel
+  linkedin: mnoetel
+  youtube: "@noetel"
+  whatsapp: +61414822353
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -71,11 +54,11 @@ social-network-links:
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
-#  calendly: yourname
+   calendly: mnoetel
 #  mastodon: instance.url/@username
 #  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+   ORCID: 0000-0002-6563-8203
+   google-scholar: RAe4W2QAAAAJ
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
