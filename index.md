@@ -5,7 +5,7 @@ css:
   - /assets/css/custom-styles.css
 ext-css:
   - //fonts.googleapis.com/css?family=Roboto:400,700
-  - //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css # Added Font Awesome for icons
+  - //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
 js:
   - /assets/js/index.js
 ext-js:
@@ -13,35 +13,29 @@ ext-js:
 ---
 
 <style>
-  /* force header text colour */
   #header-inner h1, #header-inner h2, #header-inner h3, #header-inner h4{
     color:#053C45 !important;
   }
 
-  /* Add horizontal padding on mobile for main content sections */
   @media only screen and (max-width: 750px) {
     #about, #ai, #skills, #publications, #media {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-    /* Ensure numbered list has enough padding on mobile */
     #publications ol {
-        padding-left: 2rem; /* Increased padding for numbers */
+        padding-left: 2rem;
     }
-    /* Adjust AI list layout for mobile */
     #ai .ai-item {
-        margin-bottom: 1.5rem; /* Add space between items on mobile */
+        margin-bottom: 1.5rem;
     }
-    /* Adjust media list layout for mobile */
      #media ul {
-        padding-left: 1rem; /* Adjust padding for media list */
+        padding-left: 1rem;
      }
      #media .media-item {
         margin-bottom: 1rem;
      }
   }
 
-  /* Style for the new AI list */
   #ai ul {
     list-style: none;
     padding: 0;
@@ -49,43 +43,42 @@ ext-js:
   }
   #ai .ai-item {
     margin-bottom: 1.5rem;
-    padding-left: 2.5rem; /* Space for icon */
+    padding-left: 2.5rem;
     position: relative;
   }
-   #ai .ai-item .fa-li { /* Position icon */
+   #ai .ai-item .fa-li {
       left: 0;
       position: absolute;
       text-align: center;
-      width: 2em; /* Ensure icon alignment */
+      width: 2em;
    }
   #ai .ai-item h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.2rem; /* Adjust heading size if needed */
+    font-size: 1.2rem;
   }
    #ai .ai-item h3 .fa {
-      margin-right: 0.5rem; /* Space between icon and text in heading */
+      margin-right: 0.5rem;
    }
   #ai .ai-item p {
     margin-bottom: 0;
   }
 
-  /* Style for the new Media list */
   #media ul {
       list-style: none;
       padding: 0;
       margin: 0;
   }
    #media .media-item {
-      margin-bottom: 0.75rem; /* Space between items */
-      padding-left: 2.5rem; /* Space for icon */
+      margin-bottom: 0.75rem;
+      padding-left: 2.5rem;
       position: relative;
    }
-   #media .media-item .fa-li { /* Position icon */
+   #media .media-item .fa-li {
       left: 0;
       position: absolute;
       text-align: center;
-      width: 2em; /* Ensure icon alignment */
+      width: 2em;
    }
 
 </style>
@@ -120,9 +113,9 @@ ext-js:
 </div>
 
 <div id="ai-out" class="page-section cut2">
-  <div id="ai" style="max-width:900px; margin:0 auto; text-align:left;"> {/* Adjusted max-width as images are removed */}
+  <div id="ai" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
-    <ul class="fa-ul"> {/* Using fa-ul for consistent icon alignment */}
+    <ul class="fa-ul">
         <li class="ai-item">
             <span class="fa-li fa fa-poll-h"></span>
             <h3><a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">SARA Survey</a></h3>
@@ -134,9 +127,9 @@ ext-js:
             <p>Open catalogue of risks from AI. Presented at Paris AI Action Summit and cited in the 2024 <em>International AI Safety Report</em>.</p>
         </li>
         <li class="ai-item">
-            <span class="fa-li fa fa-university"></span> {/* Changed icon for relevance */}
+            <span class="fa-li fa fa-university"></span>
             <h3>Affiliations & Roles</h3>
-            <ul class="fa-ul" style="margin-top: 0.5rem;"> {/* Nested list for affiliations */}
+            <ul class="fa-ul" style="margin-top: 0.5rem;">
                 <li><span class="fa-li fa fa-award"></span>Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
                 <li><span class="fa-li fa fa-university"></span>Affiliate Researcher, <strong>MIT FutureTech</strong></li>
                 <li><span class="fa-li fa fa-user-graduate"></span>Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
@@ -167,7 +160,7 @@ ext-js:
 <div id="publications-out" class="page-section cut2">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
-    <ol style="padding-left:1.2rem;"> {/* Base padding, adjusted via CSS media query */}
+    <ol style="padding-left:1.2rem;">
       <li><strong>Noetel M.</strong> et al. (2024). <a href="https://www.bmj.com/content/384/bmj-2023-075847" target="_blank"><em>Effect of exercise for depression: systematic review & network meta‑analysis</em>. <em>BMJ</em>.</a></li>
       <li>Sanders T., <strong>Noetel M.</strong> et al. (2024). <a href="https://www.nature.com/articles/s41562-023-01712-8" target="_blank"><em>Benefits & risks of youth screen use</em>. <em>Nature Human Behaviour</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2023). <a href="https://link.springer.com/article/10.1007/s10648-023-09786-6" target="_blank"><em>Prediction vs explanation in educational psychology</em>. <em>Educational Psychology Review</em>.</a></li>
@@ -179,24 +172,24 @@ ext-js:
 
  <div class="cut-buffer"></div>
 
- <div id="media-out" class="page-section grey-section cut2"> {/* Added grey-section */}
-   <div id="media" style="max-width:900px; margin:0 auto; text-align:left;"> {/* Adjusted max-width */}
+ <div id="media-out" class="page-section grey-section cut2">
+   <div id="media" style="max-width:900px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
 
      <ul class="fa-ul">
         <li class="media-item">
             <span class="fa-li fa fa-newspaper"></span>
             <strong>Selected Media Features:</strong>
-            <ul style="margin-top: 0.5rem; list-style: disc; padding-left: 1.5rem;"> {/* Nested list for links */}
+            <ul style="margin-top: 0.5rem; list-style: disc; padding-left: 1.5rem;">
                 <li>Exercise for depression (2024): <a href="https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html" target="_blank">CNN</a>, <a href="https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf" target="_blank">The Times</a>, BBC, Good Morning America, <a href="https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa" target="_blank">The Australian</a>, <a href="https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441" target="_blank">The Conversation</a>, <a href="https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102" target="_blank">ABC Radio National</a>.</li>
                 <li>Effective altruism (2021): <a href="https://www.abc.net.au/religion/the-case-for-effective-altruism/13359912" target="_blank">ABC Religion & Ethics</a>, <a href="https://www.abc.net.au/news/2022-01-09/are-we-making-a-difference-when-we-donate-to-charity/100722158" target="_blank">ABC Radio National</a>.</li>
                 <li>Videos in higher education (2020): <a href="https://www.forbes.com/sites/nickmorrison/2021/02/17/students-get-better-grades-if-you-replace-their-teachers-with-videos/?sh=3f5256385079" target="_blank">Forbes</a>.</li>
             </ul>
         </li>
        <li class="media-item"><span class="fa-li fa fa-handshake"></span>Briefings to two Australian federal ministers.</li>
-       <li class="media-item"><span class="fa-li fa fa-microphone"></span>Keynote presentations, workshops, live radio and primetime TV appearances.</li>
-       <li class="media-item"><span class="fa-li fa fa-video"></span>YouTube channel <strong><a href="https://www.youtube.com/@noetel" target="_blank">@noetel</a></strong> – 300 K+ views on evidence‑based teaching.</li> {/* Corrected link */}
+       <li class="media-item"><span class="fa-li fa fa-microphone"></span>Keynote presentations, workshops, <a href="https://cdn.sanity.io/files/4rsg7ofo/production/8c29e21d9b6d5e65322b45535383f99b1081b408.mp3" target="_blank">live radio</a> and <a href="https://www.youtube.com/@noetel" target="_blank">primetime TV</a>.</li>
+       <li class="media-item"><span class="fa-li fa fa-video"></span>YouTube channel <strong><a href="https://www.youtube.com/@noetel" target="_blank">primetime TV</a></strong> – 300 K+ views on evidence‑based teaching.</li>
      </ul>
 </div>
- </div>
+</div>
 </div>
