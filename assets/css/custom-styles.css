@@ -1,18 +1,15 @@
-/* Footer social‐icon styling */
-footer .social-links a .fa {
-  color: #053C45;      /* glyph = dark-teal (main colour) */
-  background: #E2F0F2;    /* circle = light-teal */
-  border-radius: 50%;     /* make it a circle */
-  padding: 9px;           /* adjust size; tweak if needed */
-  width: 36px; height: 36px;      /* keeps circles equal */
-  text-align: center; line-height: 18px; /* centres glyph */
-  transition: transform 0.2s ease;      /* optional hover flair */
+/* --- Footer text colour --- */
+footer,                       /* plain text inside the footer          */
+footer p, footer span,         /* paragraph/inline text                 */
+footer a:not(.social-links) {  /* ordinary links – excludes the icon set */
+  color: #053C45 !important;   /* dark-green / title colour             */
 }
 
-footer .social-links a:hover .fa,
-footer .social-links a:focus .fa {
-  transform: scale(1.1);
+footer a:not(.social-links):hover,
+footer a:not(.social-links):focus {
+  color: #0C869B !important;   /* optional: teal on hover, matches body */
 }
+
 
 /* Footer social icons: light-teal circles + dark-teal glyphs */
 footer .fa-stack-2x        { color: #E2F0F2 !important; } /* circle */
