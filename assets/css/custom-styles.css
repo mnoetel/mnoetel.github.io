@@ -21,18 +21,18 @@ footer a:hover .fa-stack      { transform: scale(1.1); transition: transform .2s
 
 /* === Custom header colours === */
 #header{
-  background: #FFFFFF !important;      /* white */
+  background: #FFFFFF !important;
   background-image: none !important;
-  color: #0C869B !important;          /* your highlight teal */
-  text-shadow: none;              /* optional: cancel grey-section’s shadow */
+  color: #053C45 !important;
+  text-shadow: none;
 }
 
 #header a{
-  color: #0C869B !important;
+  color: #053C45 !important;
 }
 
 #header a:hover{
-  color: #053C45;                  /* darker teal on hover */
+  color: #0C869B5;
 }
 
 
@@ -46,11 +46,11 @@ body, html {
 
 p a {
   text-decoration: none;
-  color: #1E6DE8; /* Consider aligning link color with theme? */
+  color: #053C45;
 }
 p a:hover{
   text-decoration: underline;
-  color: #1E6DE8;
+  color: #0C869B;
 }
 
 /* --- Cut Effects --- */
