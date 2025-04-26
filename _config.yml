@@ -8,7 +8,6 @@ navbar-links:
   Skills        : "#skills"
   Publications  : "#publications"
   Media         : "#media"
-  Contact       : "#contact"
   CV            : "mnoetel_resume.html"
 
 avatar: "/assets/img/avatar-icon.png"
