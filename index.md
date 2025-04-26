@@ -20,6 +20,13 @@ ext-js:
     fli_logo.png             – FLI / AIESC badge (third logo)
 ========================================================== -->
 
+<style>
+  /* force header text colour */
+  #header-inner h1, #header-inner h2, #header-inner h3, #header-inner h4{
+    color:#053C45 !important;
+  }
+</style>
+
 <div id="header" class="cut1" markdown="1" style="background:#FFFFFF; color:#053C45;">
 
 <div id="header-inner" markdown="1">
@@ -38,14 +45,14 @@ ext-js:
 
 <div id="main-sections">
 
-<!--‑‑‑‑‑‑‑‑‑‑ ABOUT – white background, left‑aligned ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
-<div id="about-out" class="page-section cut2"><!-- white -->
+<!-- ABOUT (white) -->
+<div id="about-out" class="page-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
     <p>I’m a behavioural scientist and educator working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce catastrophic risks from advanced AI and help the next generation of researchers and policymakers do the most good they can.</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Build expert consensus on AI “red‑line” capabilities and maintain living evidence maps tracking progress toward them.</li>
-      <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 2 000+ postgraduate learners, nine teaching awards, average rating 4.8 / 5.</li>
+      <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Build expert consensus on AI "red‑line" capabilities and maintain living evidence maps tracking progress toward them.</li>
+      <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 2,000+ postgraduate learners, nine teaching awards, average rating 4.8 / 5.</li>
       <li><span class="fa-li fa fa-globe"></span><strong>Impact:</strong> Cited in Australia’s <em>Safe & Responsible AI</em> report, the 2024 <em>International AI Safety Report</em>, and WHO guidelines.</li>
     </ul>
     <p>When not racing GPT‑4 to write cleaner code, you’ll find me surfing or optimising R scripts for reproducibility.</p>
@@ -54,7 +61,7 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<!--‑‑‑‑‑‑‑‑‑‑ AI GOVERNANCE TABLE (grey background) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+<!-- AI GOVERNANCE (grey) -->
 <div id="ai-out" class="page-section grey-section cut2">
   <div id="ai" style="max-width:1100px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
@@ -66,20 +73,20 @@ ext-js:
             <img src="/assets/img/sara_cover.png" alt="SARA Technical Report" style="max-width:100%;" />
           </a>
           <h3><span class="fa fa-poll-h"></span> <a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">SARA Survey</a></h3>
-          <p>Delphi‑style elicitation of catastrophic‑risk pathways. Informed federal standards; <em>Safe & Responsible AI</em> citation #2.</p>
+          <p>Delphi‑style elicitation of catastrophic‑risk pathways that informed federal standards (cited in <em>Safe & Responsible AI</em>).</p>
         </td>
         <td style="width:33%; vertical-align:top; padding:0 10px; background:transparent; border:none;">
           <a href="https://airisk.mit.edu/" target="_blank">
             <img src="/assets/img/risk_repository.png" alt="MIT AI‑Risk Repository" style="max-width:100%;" />
           </a>
           <h3><span class="fa fa-database"></span> <a href="https://airisk.mit.edu/" target="_blank">AI Risk Repository</a></h3>
-          <p>Open catalogue of misalignment evidence & red‑lines. Presented at Paris AI Action Summit; cited in 2024 <em>International AI Safety Report</em>.</p>
+          <p>Open catalogue of misalignment evidence and red‑lines. Presented at Paris AI Action Summit and cited in the 2024 <em>International AI Safety Report</em>.</p>
         </td>
         <td style="width:33%; vertical-align:top; padding:0 10px; background:transparent; border:none;">
           <a href="https://futureoflife.org/about-us/our-people/ai-existential-safety-community/" target="_blank">
-            <img src="/assets/img/fli_logo.png" alt="FLI AIESC" style="max-width:100%;" />
+            <img src="/assets/img/fli_logo.png" alt="FLI AI Existential Safety Community" style="max-width:100%;" />
           </a>
-          <h3><span class="fa fa-users"></span> <small>Field Building</small></h3>
+          <h3><span class="fa fa-users"></span> Field Building</h3>
           <ul class="fa-ul">
             <li><span class="fa-li fa fa-award"></span>Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
             <li><span class="fa-li fa fa-university"></span>Affiliate Researcher, <strong>MIT FutureTech</strong></li>
@@ -93,25 +100,25 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<!--‑‑‑‑‑‑‑‑‑‑ SKILLS (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
-<div id="skills-out" class="page-section cut2"><!-- white -->
+<!-- SKILLS (white) -->
+<div id="skills-out" class="page-section cut2">
   <div id="skills" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-toolbox"></span> Core Skills</h2>
     <ul class="fa-ul">
       <li><span class="fa-li fa fa-comments"></span><strong>Consensus methods:</strong> Delphi, RAND/UCLA, expert workshops</li>
       <li><span class="fa-li fa fa-layer-group"></span><strong>Evidence synthesis:</strong> systematic reviews, network meta‑analysis, living evidence maps</li>
       <li><span class="fa-li fa fa-code"></span><strong>Data & tooling:</strong> R, tidyverse, R Markdown, Git/GitHub, OSF</li>
-      <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana – CI on AU$3.7 M competitive grants</li>
-      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair, Effective Altruism Australia (AU$6 M distributed annually)</li>
+      <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana — CI on AU$3.7 M competitive grants</li>
+      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair, Effective Altruism Australia (AU$6 M distributed annually)</li>
       <li><span class="fa-li fa fa-bullhorn"></span><strong>Science communication:</strong> policy briefs, explainer videos (YouTube @noetel), tier‑1 media</li>
-      <li><span class="fa-li fa fa-chalkboard"></span><strong>Pedagogy:</strong> instructional design, online learning at scale (iPLAY 50 000+ students)</li>
+      <li><span class="fa-li fa fa-chalkboard"></span><strong>Pedagogy:</strong> instructional design, online learning at scale (iPLAY 50,000+ students)</li>
     </ul>
   </div>
 </div>
 
 <div class="cut-buffer"></div>
 
-<!--‑‑‑‑‑‑‑‑‑‑ PUBLICATIONS (grey) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+<!-- PUBLICATIONS (grey) -->
 <div id="publications-out" class="page-section grey-section cut2">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
@@ -121,33 +128,4 @@ ext-js:
       <li><strong>Noetel M.</strong> et al. (2023). <a href="https://doi.org/10.1007/s10648-023-09723-4" target="_blank"><em>Prediction vs explanation in educational psychology</em>. <em>Educational Psychology Review</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2022). <a href="https://doi.org/10.3102/00346543221100571" target="_blank"><em>Multimedia design for learning: overview of reviews with meta‑meta‑analysis</em>. <em>Review of Educational Research</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2021). <a href="https://doi.org/10.3102/0034654321990711" target="_blank"><em>Video improves learning in higher education: systematic review</em>. <em>Review of Educational Research</em>.</a></li>
-    </ol>
-  </div>
-</div>
-
-<div class="cut-buffer"></div>
-
-<!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
-<div id="media-out" class="page-section cut2"><!-- white -->
-  <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
-    <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
-
-    <table style="width:100%; border-collapse:collapse; background:transparent;">
-      <tr>
-        <td style="width:60%; vertical-align:top; padding-right:20px; background:transparent; border:none;">
-          <ul class="fa-ul">
-            <li><span class="fa-li fa fa-newspaper"></span>Featured on <strong>CNN, BBC, ABC, <em>The Times</em></strong> discussing exercise for depression.</li>
-            <li><span class="fa-li fa fa-handshake"></span>Briefings to Australia’s Assistant Minister for Mental Health & Treasury.</li>
-            <li><span class="fa-li fa fa-microphone"></span>Keynote & workshops at <strong>EA Global x Australia</strong> (2022‑23).</li>
-            <li><span class="fa-li fa fa-video"></span>YouTube channel <strong>@noetel</strong> – 100 K+ views on evidence‑based teaching.</li>
-          </ul>
-        </td>
-        <td style="width:40%; vertical-align:top; text-align:center; background:transparent; border:none;">
-          <iframe width="360" height="203" src="https://www.youtube.com/embed/mEERjOv6pJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-</div><!-- end main‑sections -->
+    </
