@@ -30,8 +30,6 @@ ext-js:
 
 </div>
 
-<div id="particles-js"></div>
-
 </div>
 
 <div id="main-sections">
