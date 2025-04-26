@@ -11,15 +11,6 @@ ext-js:
   - //cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 ---
 
-<!-- =========================================================
-  INDEX PAGE FOR mnoetel.github.io
-  Sections: About | AI | Skills | Publications | Media
-  Required assets (place under /assets/img/):
-    sara_cover.png           – SARA technical‑report cover
-    risk_repository.png      – MIT AI‑Risk Repository graphic
-    fli_logo.png             – FLI / AIESC badge (third logo)
-========================================================== -->
-
 <style>
   /* force header text colour */
   #header-inner h1, #header-inner h2, #header-inner h3, #header-inner h4{
@@ -45,7 +36,6 @@ ext-js:
 
 <div id="main-sections">
 
-<!-- ABOUT (white) -->
 <div id="about-out" class="page-section grey-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
@@ -61,7 +51,6 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<!-- AI GOVERNANCE (grey) -->
 <div id="ai-out" class="page-section cut2">
   <div id="ai" style="max-width:1100px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
@@ -99,7 +88,6 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<!-- SKILLS (white) -->
 <div id="skills-out" class="page-section grey-section cut2">
   <div id="skills" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-toolbox"></span> Core Skills</h2>
@@ -116,7 +104,6 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<!-- PUBLICATIONS (grey) -->
 <div id="publications-out" class="page-section cut2">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
@@ -132,8 +119,7 @@ ext-js:
  
  <div class="cut-buffer"></div>
  
- <!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
- <div id="media-out" class="page-section grey-section cut2"><!-- white -->
+ <div id="media-out" class="page-section cut2">
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
