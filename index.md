@@ -152,7 +152,6 @@ ext-js:
          </td>
        </tr>
      </table>
-   </div>
  </div>
  
  </div><!-- end main‑sections -->
