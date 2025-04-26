@@ -46,10 +46,10 @@ ext-js:
 <div id="main-sections">
 
 <!-- ABOUT (white) -->
-<div id="about-out" class="page-section cut2">
+<div id="about-out" class="page-section grey-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
-    <p>I’m a behavioural scientist and educator working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce catastrophic risks from advanced AI and help the next generation of researchers and policymakers do the most good they can.</p>
+    <p>I’m an academic working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce the worst risks from advanced AI and people do the most good they can.</p>
     <ul class="fa-ul">
       <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Build expert consensus on AI "red‑line" capabilities and maintain living evidence maps tracking progress toward them.</li>
       <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 2,000+ postgraduate learners, nine teaching awards, average rating 4.8 / 5.</li>
@@ -62,7 +62,7 @@ ext-js:
 <div class="cut-buffer"></div>
 
 <!-- AI GOVERNANCE (grey) -->
-<div id="ai-out" class="page-section grey-section cut2">
+<div id="ai-out" class="page-section cut2">
   <div id="ai" style="max-width:1100px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
 
@@ -101,7 +101,7 @@ ext-js:
 <div class="cut-buffer"></div>
 
 <!-- SKILLS (white) -->
-<div id="skills-out" class="page-section cut2">
+<div id="skills-out" class="page-section grey-section cut2">
   <div id="skills" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-toolbox"></span> Core Skills</h2>
     <ul class="fa-ul">
@@ -119,7 +119,7 @@ ext-js:
 <div class="cut-buffer"></div>
 
 <!-- PUBLICATIONS (grey) -->
-<div id="publications-out" class="page-section grey-section cut2">
+<div id="publications-out" class="page-section cut2">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
     <ol style="padding-left:1.2rem;">
