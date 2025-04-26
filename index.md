@@ -126,7 +126,6 @@ ext-js:
       <li><strong>Noetel M.</strong> et al. (2023). <a href="https://link.springer.com/article/10.1007/s10648-023-09786-6" target="_blank"><em>Prediction vs explanation in educational psychology</em>. <em>Educational Psychology Review</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2022). <a href="https://journals.sagepub.com/doi/10.3102/00346543211052329" target="_blank"><em>Multimedia design for learning</em>. <em>Review of Educational Research</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2021). <a href="https://journals.sagepub.com/doi/10.3102/0034654321990713" target="_blank"><em>Video improves learning in higher education</em>. <em>Review of Educational Research</em>.</a></li>
-      </li>
      </ol>
    </div>
  </div>
@@ -134,7 +133,7 @@ ext-js:
  <div class="cut-buffer"></div>
  
  <!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
- <div id="media-out" class="page-section cut2"><!-- white -->
+ <div id="media-out" class="page-section grey-section cut2"><!-- white -->
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
@@ -145,7 +144,7 @@ ext-js:
              <li><span class="fa-li fa fa-newspaper"></span>Featured on <strong>CNN, BBC, ABC, <em>The Times</em></strong> discussing exercise for depression.</li>
              <li><span class="fa-li fa fa-handshake"></span>Briefings to two Australian federal ministers.</li>
              <li><span class="fa-li fa fa-microphone"></span>Keynote presentations, workshops, live radio and primetime TV appearances</li>
-             <li><span class="fa-li fa fa-video"></span>YouTube channel <strong>@noetel</strong> – 300 K+ views on evidence‑based teaching.</li>
+             <li><span class="fa-li fa fa-video"></span>YouTube channel <strong><a href = "https://www.youtube.com/@noetel">@noetel</a></strong> – 300 K+ views on evidence‑based teaching.</li>
            </ul>
          </td>
          <td style="width:40%; vertical-align:top; text-align:center; background:transparent; border:none;">
