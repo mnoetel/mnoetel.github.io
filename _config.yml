@@ -90,11 +90,10 @@ navbar-col       : "#053C45"   # HEADER background – solid dark teal
 navbar-text-col  : "#FFFFFF"   # white title & menu items
 navbar-border-col: "#053C45"   # border disappears into bg
 
-footer-col       : "#053C45"   # FOOTER background – match header
-footer-text-col  : "#FFFFFF"   # white body text in footer
-footer-link-col  : "#FFFFFF"   # white icons/links
-footer-hover-col : "#E2F0F2"   # gentle pale-teal tint on hover
-
+footer-col       : "#FFFFFF"   # FOOTER background – match header
+footer-text-col  : "#053C45"   # body text in footer
+footer-link-col  : "#053C45"   # ordinary links in footer
+footer-hover-col : "#0C869B"   # (optional) teal tint on hover
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 site-css:

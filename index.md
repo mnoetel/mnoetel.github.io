@@ -72,7 +72,7 @@ ext-js:
 <div id="main-sections">
 
 <div id="about-out" class="page-section grey-section cut2">
-  <div id="about" style="max-width:900px; margin:0 auto; text-align:left;">
+  <div id="about" style="max-width:900px; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
     <p>I’m an academic working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce the worst risks from advanced AI and help people do the most good they can.</p>
     <ul class="fa-ul">
