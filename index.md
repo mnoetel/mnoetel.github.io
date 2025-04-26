@@ -133,13 +133,13 @@ ext-js:
  <div class="cut-buffer"></div>
  
  <!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
- <div id="media-out" class="page-section grey-section cut1"><!-- white -->
+ <div id="media-out" class="page-section grey-section cut2"><!-- white -->
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
-     <table style="width:100%; border-collapse:collapse; background:transparent;">
+     <table style="width:100%; border-collapse:collapse; background:transparent !important;">
        <tr>
-         <td style="width:60%; vertical-align:top; padding-right:20px; background:transparent; border:none;">
+         <td style="width:60%; vertical-align:top; padding-right:20px; background:transparent !important; border:none;">
            <ul class="fa-ul">
              <li><span class="fa-li fa fa-newspaper"></span>Featured on <strong>CNN, BBC, ABC, <em>The Times</em></strong> discussing exercise for depression.</li>
              <li><span class="fa-li fa fa-handshake"></span>Briefings to two Australian federal ministers.</li>
@@ -147,7 +147,7 @@ ext-js:
              <li><span class="fa-li fa fa-video"></span>YouTube channel <strong><a href = "https://www.youtube.com/@noetel">@noetel</a></strong> – 300 K+ views on evidence‑based teaching.</li>
            </ul>
          </td>
-         <td style="width:40%; vertical-align:top; text-align:center; background:transparent; border:none;">
+         <td style="width:40%; vertical-align:top; text-align:center; background:transparent !important; border:none;">
            <iframe width="360" height="203" src="https://www.youtube.com/embed/mEERjOv6pJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </td>
        </tr>
