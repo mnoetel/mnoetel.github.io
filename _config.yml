@@ -4,8 +4,8 @@ author: Michael Noetel
 
 navbar-links:
   About         : "#about"
+  AI            : "#ai"
   Skills        : "#skills"
-  AI Governance : "#ai"
   Publications  : "#publications"
   Media         : "#media"
   Contact       : "#contact"
