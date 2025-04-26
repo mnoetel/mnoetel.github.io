@@ -23,11 +23,11 @@ ext-js:
 
 <div id="header-inner" markdown="1">
 
-# Michael Noetel {#title}
+# Michael Noetel {#title}
 
 ## Associate Professor, The University of Queensland {#subtitle}
 
-#### Psychology & AI Governance {#sub-subtitle}
+#### Psychology & AI Governance {#sub-subtitle}
 
 </div>
 
@@ -45,10 +45,10 @@ ext-js:
   My mission is to reduce catastrophic risks from advanced AI and help the next generation of researchers and policymakers do the most good they can.  
   
   - **Research:** I lead projects that build expert consensus on AI "red‑line" capabilities and maintain living evidence maps tracking whether we’re approaching them.  
-  - **Teaching:** I’ve taught and mentored more than 2 000 postgraduate students, earning nine teaching awards and an average rating of 4.8 / 5.  
-  - **Impact:** My work has been cited in Australia’s *Safe & Responsible AI* report, the *International AI Safety Report* (2024), and WHO physical‑activity guidelines.  
+  - **Teaching:** I’ve taught and mentored more than 2000 students, earning nine teaching awards and an average rating of 4.8/5.  
+  - **Impact:** My work has been cited in Australia’s *Safe & Responsible AI* report, the *International AI Safety Report* (2024), and WHO physical‑activity guidelines.  
   
-  When not racing GPT‑4 to write better literature reviews, you’ll find me surfing or tweaking R scripts to shave seconds off reproducible workflows.
+  When not racing GPT‑4 to write better literature reviews, you’ll find me surfing or tweaking R scripts to shave seconds off reproducible workflows.
   </div>
 </div>
 
@@ -63,19 +63,19 @@ ext-js:
     <img src="/assets/img/sara_cover.png" alt="SARA Technical Report cover" />
   </div>
   
-  **SARA Survey – Second citation in Australia’s AI policy white‑paper**  
+  **SARA Survey – Second citation in Australia’s AI policy white‑paper**  
   I designed and ran the Survey of Assessing Risks from AI (SARA), a Delphi‑style elicitation that distilled expert judgement on catastrophic‑risk pathways. The results informed federal recommendations on AI standards and guardrails.  
   
-  **AI Risk Repository – Presented at Paris AI Action Summit**  
-  Working with MIT FutureTech, I co‑authored an open repository cataloguing misalignment evidence and "red lines". It’s now cited in the 2024 *International AI Safety Report*.  
+  **AI Risk Repository – Which was presented at Paris AI Action Summit**  
+  Alongside MIT FutureTech, I co‑authored an open repository cataloguing risks from AI. It’s now cited in the 2024 *International AI Safety Report*.  
   <div class="section-img-left">
     <!-- TODO: place repository graphic at /assets/img/risk_repository.png -->
     <img src="/assets/img/risk_repository.png" alt="AI Risk Repository graphic" />
   </div>
   
   **Field‑building**  
-  – Facilitator, **AGI Safety Fundamentals – Governance** (3 cohorts, 60 + participants).  
-  – Chair, **Effective Altruism Australia** – overseeing AU$6 M p.a. to cost‑effective programs.  
+  – Facilitator, **AGI Safety Fundamentals – Governance** (3 cohorts).  
+  – Chair, **Effective Altruism Australia** – overseeing AU$6 M p.a. to cost‑effective programs.  
   – Visiting Researcher, **MIT FutureTech**.
   </div>
 </div>
@@ -88,10 +88,10 @@ ext-js:
   ## Core Skills  
   - **Consensus methods:** Delphi, RAND/UCLA, expert workshops  
   - **Evidence synthesis:** systematic reviews, network meta‑analysis, living evidence maps  
-  - **Data & tooling:** R, tidyverse, R Markdown, Git/GitHub, OSF  
-  - **Project leadership:** Agile, Scrum, Asana – CI on AU$3.7 M in competitive grants  
-  - **Science communication:** policy briefs, explainer videos (YouTube @noetel), tier‑1 media  
-  - **Pedagogy:** instructional design, online learning at scale (iPLAY 50 000 + students)
+  - **Data & tooling:** R, tidyverse, R Markdown, Git/GitHub, OSF  
+  - **Project leadership:** Agile, Scrum, Asana – CI on AU$3.7 M in competitive grants  
+  - **Science communication:** policy briefs, explainer videos (YouTube @noetel), tier‑1 media  
+  - **Pedagogy:** instructional design, online learning at scale (iPLAY 50 000 + students)
   </div>
 </div>
 
@@ -101,12 +101,12 @@ ext-js:
 <div id="publications-out" class="page-section grey-section cut2">
   <div id="publications" markdown="1">
   ## Selected Publications  
-  – *BMJ* (2024): Network meta‑analysis — exercise vs. medication for depression (Altmetric 1400 +).  
+  – *BMJ* (2024): Network meta‑analysis — exercise vs. medication for depression (Altmetric 1400 +).  
   – *Nature Human Behaviour* (2023): How engagement tracks online learning outcomes.  
-  – *JAMA Pediatrics* (2021): Cluster RCT of iPLAY physical‑activity program (50 000 students).  
+  – *JAMA Pediatrics* (2021): Cluster RCT of iPLAY physical‑activity program (50 000 students).  
   – *European Psychiatry* (2023): Exercise for schizophrenia symptom reduction.  
   – *International Review of Sport & Exercise Psychology* (2022): Open‑science agenda for sport psych.  
-  50 + other peer‑reviewed articles; h‑index `r h_index`, FWCI 7.3.
+  50 + other peer‑reviewed articles; h‑index `r h_index`, FWCI 7.3.
   </div>
 </div>
 
@@ -118,8 +118,8 @@ ext-js:
   ## Media & Talks  
   - Featured on **CNN, BBC, ABC, *The Times*** discussing exercise for depression.  
   - Invited briefings to Australia’s Assistant Minister for Mental Health & Treasury.  
-  - Keynote & workshops at **EA Global x Australia** (2022‑23).  
-  - YouTube channel **@noetel** – over 100 K views on evidence‑based teaching.
+  - Keynote & workshops at **EA Global x Australia** (2022‑23).  
+  - YouTube channel **@noetel** – over 100 K views on evidence‑based teaching.
   </div>
 </div>
 
