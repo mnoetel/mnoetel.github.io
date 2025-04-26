@@ -35,35 +35,7 @@ ext-js:
         margin-bottom: 1rem;
      }
   }
-
-  #ai ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #ai .ai-item {
-    margin-bottom: 1.5rem;
-    padding-left: 2.5rem;
-    position: relative;
-  }
-   #ai .ai-item .fa-li {
-      left: 0;
-      position: absolute;
-      text-align: center;
-      width: 2em;
-   }
-  #ai .ai-item h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-   #ai .ai-item h3 .fa {
-      margin-right: 0.5rem;
-   }
-  #ai .ai-item p {
-    margin-bottom: 0;
-  }
-
+  
   #media ul {
       list-style: none;
       padding: 0;
@@ -116,23 +88,23 @@ ext-js:
   <div id="ai" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
     <ul class="fa-ul">
-        <li class="ai-item">
+        <li class="media-item">
             <span class="fa-li fa fa-poll-h"></span>
             <h3><a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">SARA Survey</a></h3>
             <p>Largest survey of Australian attitudes to AI risks (cited in <em>Safe & Responsible AI</em>).</p>
         </li>
-        <li class="ai-item">
+        <li class="media-item">
             <span class="fa-li fa fa-database"></span>
             <h3><a href="https://airisk.mit.edu/" target="_blank">AI Risk Repository</a></h3>
             <p>Open catalogue of risks from AI. Presented at Paris AI Action Summit and cited in the 2024 <em>International AI Safety Report</em>.</p>
         </li>
-        <li class="ai-item">
+        <li class="media-item">
             <span class="fa-li fa fa-university"></span>
             <h3>Affiliations & Roles</h3>
             <ul class="fa-ul" style="margin-top: 0.5rem;">
-                <li><span class="fa-li fa fa-award"></span>Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
-                <li><span class="fa-li fa fa-university"></span>Affiliate Researcher, <strong>MIT FutureTech</strong></li>
-                <li><span class="fa-li fa fa-user-graduate"></span>Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
+                <li class="media-item">Affiliate Researcher, <strong>MIT FutureTech</strong></li>
+                <li class="media-item">Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
+                <li class="media-item">Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
             </ul>
         </li>
     </ul>
