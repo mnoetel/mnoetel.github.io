@@ -72,7 +72,7 @@ ext-js:
 <div id="main-sections">
 
 <div id="about-out" class="page-section grey-section cut2">
-  <div id="about" style="max-width:900px; text-align:left;">
+  <div id="about" style="max-width:900px; margin:0 auto; padding-left: 1.5rem; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
     <p>I’m an academic working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce the worst risks from advanced AI and help people do the most good they can.</p>
     <ul class="fa-ul">
@@ -91,12 +91,12 @@ ext-js:
         <li class="media-item">
             <span class="fa-li fa fa-poll-h"></span>
             <h3><a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">SARA Survey</a></h3>
-            <p>Largest survey of Australian attitudes to AI risks (cited in <em>Safe & Responsible AI</em>).</p>
+            <p>Largest survey of Australian attitudes to AI risks (cited in <a href = "https://consult.industry.gov.au/ai-mandatory-guardrails"> Australian Government's Mandatory Guiderails Proposal Paper</a>).</p>
         </li>
         <li class="media-item">
             <span class="fa-li fa fa-database"></span>
             <h3><a href="https://airisk.mit.edu/" target="_blank">AI Risk Repository</a></h3>
-            <p>Open catalogue of risks from AI. Presented at Paris AI Action Summit and cited in the 2024 <em>International AI Safety Report</em>.</p>
+            <p>Open catalogue of risks from AI. Was presented at <a href = "https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia">Paris AI Action Summit</a> and cited in the 2025 <a href = "https://www.gov.uk/government/publications/international-ai-safety-report-2025">International AI Safety Report</a>.</p>
         </li>
         <li class="media-item">
             <span class="fa-li fa fa-university"></span>
@@ -120,7 +120,7 @@ ext-js:
       <li><span class="fa-li fa fa-layer-group"></span><strong>Evidence synthesis:</strong> systematic reviews, network meta‑analysis, rapid reviews</li>
       <li><span class="fa-li fa fa-code"></span><strong>Data & tooling:</strong> R, tidyverse, R Markdown, GitHub, OSF</li>
       <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana — CI on AU$3.7M competitive grants</li>
-      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair, Effective Altruism Australia (AU$6M granted annually)</li>
+      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair, <a href = "eaa.org.au">Effective Altruism Australia</a> (AU$6M granted annually)</li>
       <li><span class="fa-li fa fa-bullhorn"></span><strong>Science communication:</strong> policy briefs, explainer videos, tier‑1 media</li>
       <li><span class="fa-li fa fa-chalkboard"></span><strong>Pedagogy:</strong> instructional design, online learning at scale</li>
     </ul>
