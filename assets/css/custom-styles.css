@@ -13,3 +13,11 @@ footer .social-links a:hover .fa,
 footer .social-links a:focus .fa {
   transform: scale(1.1);
 }
+
+/* Footer social icons: light-teal circles + dark-teal glyphs */
+footer .fa-stack-2x          { color: #E2F0F2 !important; } /* circle */
+footer .fa-stack-1x,
+footer .fa-stack-1x.fa-inverse { color: #053C45 !important; } /* glyph */
+
+/* Optional hover pop */
+footer a:hover .fa-stack      { transform: scale(1.1); transition: transform .2s;}
