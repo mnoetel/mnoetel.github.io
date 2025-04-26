@@ -75,26 +75,27 @@ keywords: "AI governance, AI safety, existential risk, Delphi, evidence synthesi
 ######################################
 
 # Palette reference
-# Main      : #053C45   (dark teal)
-# Light     : #E2F0F2   (pale teal-grey)
-# Near-black: #011215
-# Highlight : #0C869B   (bright teal)
-# White     : #FFFFFF
+# Dark-teal (main)   : #053C45
+# Pale-teal (light)  : #E2F0F2
+# Near-black text    : #011215
+# Highlight teal     : #0C869B
+# Pure white         : #FFFFFF
 
-page-col: "#FFFFFF"   # white background keeps readability high
-text-col: "#011215"   # near-black body text
-link-col: "#0C869B"   # highlight teal for links
-hover-col: "#053C45"   # main teal on hover/active for clear feedback
-navbar-col: "#053C45"   # solid main colour navbar
-navbar-text-col: "#E2F0F2"   # light teal-grey text for contrast (AA compliant)
-navbar-border-col: "#0C869B"  # thin highlight border (optional)
-footer-col: "#053C45"   # mirror navbar
-footer-text-col: "#E2F0F2"
-footer-link-col: "#E2F0F2"
-footer-hover-col: "#0C869B"
+page-col         : "#FFFFFF"   # white page background
+text-col         : "#011215"   # near-black body text
 
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-mobile-theme-col: "#053C45"
+link-col         : "#0C869B"   # highlight teal for links
+hover-col        : "#0C869B"   # same hue; we'll cue hover via underline (CSS below)
+
+navbar-col       : "#053C45"   # HEADER background – solid dark teal
+navbar-text-col  : "#FFFFFF"   # white title & menu items
+navbar-border-col: "#053C45"   # border disappears into bg
+
+footer-col       : "#053C45"   # FOOTER background – match header
+footer-text-col  : "#FFFFFF"   # white body text in footer
+footer-link-col  : "#FFFFFF"   # white icons/links
+footer-hover-col : "#E2F0F2"   # gentle pale-teal tint on hover
+
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
