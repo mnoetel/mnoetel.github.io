@@ -49,8 +49,6 @@ ext-js:
   </div>
 </div>
 
-<div class="cut-buffer"></div>
-
 <div id="ai-out" class="page-section cut2">
   <div id="ai" style="max-width:1100px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-shield-alt"></span> AI Governance Highlights</h2>
