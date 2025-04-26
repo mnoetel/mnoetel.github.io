@@ -20,7 +20,7 @@ ext-js:
     fli_logo.png             – FLI / AIESC badge (third logo)
 ========================================================== -->
 
-<div id="header" class="cut1 grey-section" markdown="1">
+<div id="header" class="cut1">
 
 <div id="header-inner" markdown="1">
 

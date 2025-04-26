@@ -21,3 +21,19 @@ footer .fa-stack-1x.fa-inverse { color: #053C45 !important; } /* glyph */
 
 /* Optional hover pop */
 footer a:hover .fa-stack      { transform: scale(1.1); transition: transform .2s;}
+
+/* === Custom header colours === */
+#header{
+  background: #FFFFFF !important;        /* white */
+  background-image: none !important;     /* kill the star-dust texture */
+  color: #0C869B !important;             /* your highlight teal */
+  text-shadow: none;                     /* optional: cancel grey-section’s shadow */
+}
+
+#header a{
+  color: #0C869B !important;
+}
+
+#header a:hover{
+  color: #053C45;                        /* darker teal on hover */
+}
