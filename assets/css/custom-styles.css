@@ -1,345 +1,450 @@
-/* === Base Styles === */
+/* Footer social‐icon styling */
+footer .social-links a .fa {
+  color: #053C45;          /* glyph = dark-teal (main colour) */
+  background: #E2F0F2;     /* circle = light-teal */
+  border-radius: 50%;      /* make it a circle */
+  padding: 9px;            /* adjust size; tweak if needed */
+  width: 36px; height: 36px;       /* keeps circles equal */
+  text-align: center; line-height: 18px; /* centres glyph */
+  transition: transform 0.2s ease;        /* optional hover flair */
+}
+
+footer .social-links a:hover .fa,
+footer .social-links a:focus .fa {
+  transform: scale(1.1);
+}
+
+/* Footer social icons: light-teal circles + dark-teal glyphs */
+footer .fa-stack-2x          { color: #E2F0F2 !important; } /* circle */
+footer .fa-stack-1x,
+footer .fa-stack-1x.fa-inverse { color: #053C45 !important; } /* glyph */
+
+/* Optional hover pop */
+footer a:hover .fa-stack      { transform: scale(1.1); transition: transform .2s;}
+
+/* === Custom header colours === */
+#header{
+  background: #FFFFFF !important;        /* white */
+  background-image: none !important;
+  color: #0C869B !important;             /* your highlight teal */
+  text-shadow: none;                     /* optional: cancel grey-section’s shadow */
+}
+
+#header a{
+  color: #0C869B !important;
+}
+
+#header a:hover{
+  color: #053C45;                        /* darker teal on hover */
+}
+
+
 body, html {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #fff;
-  color: #333; /* Default text color */
+  color: #333;
   margin: 0;
   padding: 0;
-  font-size: 16px; /* Base font size */
-  line-height: 1.6; /* Base line height */
 }
 
-p {
-  margin-bottom: 1rem; /* Spacing below paragraphs */
-}
-
-a {
-  color: #1E6DE8; /* Link color */
+p a {
   text-decoration: none;
+  color: #1E6DE8;
 }
-a:hover{
+p a:hover{
   text-decoration: underline;
+  color: #1E6DE8;
 }
 
-strong {
-  font-weight: bold;
+.cut1 {
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));
+}
+.cut2 {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 4vw),0 100%);
+}
+.cut-buffer {
+  width: 100%;
+  height: 4vw;
+  background: #f5f5f5;
+  margin-top: -4vw;
+}
+.page-section.cut1,
+.page-section.cut2 {
+  padding: 4.5rem 0 calc(4.5rem + 4vw);
+}
+@media only screen and (max-width: 1899px) {
+  .page-section.cut1,
+  .page-section.cut2 {
+    padding: 4.5rem 0 calc(4.5rem + 5vw);
+  }
 }
 
-/* === Header Styles === */
+footer {
+  border-top: 0;
+  margin-top: 0;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 650px) {
+  #particles-js {
+    display: none;
+  }
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+}
 #header {
   text-align: center;
-  margin-top: 3.125rem; /* 50px */
-  padding: 6rem 0 8rem; /* Adjusted padding */
-  color: #053C45 !important; /* Forced in HTML style block, but good fallback */
-  background: #FFFFFF !important; /* Forced in HTML style block */
-  /* Removed animated background/image */
-  text-shadow: none;
+  margin-top: 3.125rem;
+  background: #05172d;
+  padding: 10rem 0 13rem;
+  color: #fff;
+  background-image: url(/assets/img/stardust-bg.png);
+  animation: animatedBackground 100s linear infinite;
+}
+#header h1,
+#header h2 {
+  font-family: Roboto;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: underline;
+}
+#header a:hover {
+  color: #3380d4;
 }
 #header-inner {
   display: inline-block;
-  max-width: 90%; /* Prevent overflow on narrow screens */
-}
-#header-inner h1, #header-inner h2, #header-inner h3, #header-inner h4{
-   color:#053C45 !important; /* From inline style block */
-}
-
-#header h1, #header h2 {
-  font-family: 'Roboto', sans-serif; /* Use Roboto font */
 }
 
 #title {
-  margin: 0 0 -1rem -6rem; /* Adjusted margin */
-  font-size: 4.5rem; /* Adjusted size */
+  margin: 0 0 -1.875rem -10.9375rem;
+  font-size: 6.375rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 #subtitle  {
   font-weight: normal;
   margin: 0;
-  margin-left: 6rem; /* Adjusted margin */
-  font-size: 2rem; /* Adjusted size */
-  line-height: 1.3;
+  margin-left: 10.9375rem;
+  font-size: 2.8125rem;
+  line-height: 1.5;
 }
 
 #sub-subtitle {
   font-weight: bold;
-  font-size: 1.25rem; /* Adjusted size */
-  margin-top: 2rem; /* Adjusted spacing */
+  font-size: 1.4rem;
+  margin-top: 3.75rem;
 }
 
-/* === Section Styling === */
+#header .actionbtn-out {
+  margin: 0;
+}
+#header .actionbtn {
+  margin-top: 7rem;
+  color: #fff;
+  background: #05172d;
+  border: 2px solid #fff;
+}
+#header .actionbtn:hover,
+#header .actionbtn:focus {
+  color: #05172d;
+  background: #fff;
+}
+.actionbtn {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 750px) {
+  .actionbtn {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1899px) {
+  #header {
+    padding: 10rem 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #header {
+    padding: 4.5rem 0.5rem 5.5rem;
+  }
+  #title {
+    margin: 0 0 -0.625rem;
+    font-size: 3rem;
+  }
+  #subtitle {
+    margin-left: 0;
+    font-size: 1.875rem;
+  }
+  #sub-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+#aboutme-section {
+  text-align: left;
+  max-width: 56.875rem;
+  margin: 0 auto;
+  font-size: 1.3125rem;
+}
+#aboutme-list {
+  margin-top: 2rem;
+}
+.about-text {
+  position : relative;
+  padding: 0 0.3125rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+.about-text strong {
+  font-weight: 600;
+}
+.about-text .about-icon {
+  position: absolute;
+  top: 0.3125rem;
+}
+.about-text .about-content {
+  padding-left: 1.875rem;
+  display: inline-block;
+}
+
 .page-section {
-  color: #333; /* Default text color */
+  margin-top: -1px;
+  color: #615d6d;
   text-align: center;
-  padding: 4rem 0; /* Default vertical padding */
+  padding: 4.5rem 0;
   background: #fff;
 }
 
 .page-section.grey-section {
   background: #f5f5f5;
+  text-shadow: 0 1px #fff;
 }
 
-/* Container for content within sections */
-.content-container {
-  max-width: 900px; /* Default max width */
-  margin: 0 auto;
-  text-align: left;
-  padding: 0 1rem; /* Default horizontal padding */
-}
-
-/* Specific max-widths if needed */
-#ai.content-container, #media.content-container {
-  max-width: 1100px;
-}
-
-.section-title {
-  font-size: 2.5rem; /* Adjusted size */
+.page-section .section-title {
+  font-size: 5rem;
   line-height: 1.3;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 3rem; /* Spacing below title */
-  color: #053C45; /* Dark Teal */
-}
-.section-title .fa { /* Icon in title */
-  margin-right: 0.5rem;
-  color: #0C869B; /* Highlight Teal */
+  margin-bottom: 4rem;
 }
 
-/* === Cut Edge Effect === */
-.cut1 {
-  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 3vw)); /* Adjusted vw */
-}
-.cut2 {
-  clip-path: polygon(0 0,100% 0,100% calc(100% - 3vw),0 100%); /* Adjusted vw */
-}
-.cut-buffer {
-  width: 100%;
-  height: 3vw; /* Match clip-path */
-  background: #f5f5f5; /* Should match the following section bg */
-  margin-top: -3vw; /* Overlap */
-}
-/* Adjust padding for cut sections */
-.page-section.cut1,
-.page-section.cut2 {
-  padding-bottom: calc(4rem + 3vw); /* Base padding + cut height */
-}
-/* Ensure buffer between grey sections is white if needed */
-#skills-out + .cut-buffer {
-  background: #fff; /* Buffer before white section */
-}
-#publications-out + .cut-buffer {
-   background: #f5f5f5; /* Buffer before grey section */
-}
-#media-out + .cut-buffer { /* If there was a cut after media */
-   background: #fff;
+@media only screen and (max-width: 650px) {
+  .page-section .section-title {
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+  }
+  #clients-subtitle {
+    margin-top: -2.5rem;
+  }
 }
 
-
-/* === Font Awesome List Styling === */
-.fa-ul {
-  list-style-type: none;
-  padding-left: 0; /* Remove default padding */
-  margin-left: 2em; /* Indent list */
+#services {
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 1px #fff;
 }
-.fa-ul > li {
-  position: relative;
-  margin-bottom: 0.5rem; /* Space between list items */
-}
-.fa-li {
-  position: absolute;
-  left: -1.8em; /* Position icon */
-  width: 1.8em;
-  text-align: center;
-  line-height: inherit; /* Align icon vertically */
-  color: #0C869B; /* Icon color - teal */
-}
-
-/* === Specific Section Content Styles === */
-
-/* About Section List */
-#about ul li {
-  margin-bottom: 0.8rem; /* Slightly more space */
-}
-
-/* AI Governance Table */
-.ai-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: transparent;
-  margin-top: 2rem; /* Space above table */
-}
-.ai-table td {
-  width: 33.33%; /* Default width */
+#services .service {
+  display: inline-block;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  cursor: default;
   vertical-align: top;
-  padding: 0 15px;
-  background: transparent;
-  border: none;
+  width: 27rem;
 }
-.ai-table h3 {
-  margin-top: 0; /* Remove top margin for headings in table */
-  color: #053C45;
-  font-size: 1.2rem;
+#services .service:hover {
+  background: #fafafa;
 }
-.ai-table h3 .fa {
-  margin-right: 0.5rem;
-  color: #0C869B;
+#services .service-img {
+  padding: 0 1rem;
 }
-.ai-table ul {
-  margin-top: 0.5rem;
-  padding-left: 0; /* Reset padding if using fa-ul inside */
+#services .service-text {
+  margin-top: -1rem;
+}
+#services-break {
+  display: none;
+}
+@media only screen and (max-width: 1899px) {
+  #services-break {
+    display: block;
+    margin-top: 4rem;
+  }
+  #services .service {
+    margin: 0 2rem;
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #services .service {
+    padding: 1rem 0.625rem;
+    font-size: 1.25rem;
+    width: 20rem;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #services-break {
+    display: none;
+  }
 }
 
-/* Skills Section List */
-#skills ul li {
-  margin-bottom: 0.8rem;
+#services-list {
+  margin: -1rem 0 4.375rem;
 }
 
-/* Publications List (using .publication-list class now) */
-/* Styles added to <style> block in HTML for icon handling */
-
-/* Media Section Paragraph */
-#media p {
-  font-size: 1.1rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+#aboutus-out, .aboutus-buffer {
+  background: #f5f5f5;
+  background-image: url(/assets/img/back-bg.png);
+}
+#aboutus,
+#values {
+  padding: 0 1rem;
 }
 
-/* === NEW: Text-Image Layout === */
-.layout-text-image {
-  display: flex;
-  flex-wrap: wrap; /* Allows stacking on mobile */
-  align-items: flex-start; /* Align items to the top */
-  gap: 2.5rem; /* Space between text and image */
-  margin-top: 2rem; /* Space above this layout */
+#aboutus-text,
+#values-text {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5rem
 }
-.layout-text {
-  flex: 2; /* Text takes more space */
-  min-width: 300px; /* Prevents text column collapsing too much */
+@media only screen and (max-width: 750px) {
+  #aboutus-text,
+  #values-text {
+    font-size: 1.25rem;
+  }
 }
-.layout-image {
-  flex: 1; /* Image takes less space */
-  min-width: 250px; /* Prevents image column collapsing too much */
+
+#values-out, .values-buffer {
+  background: #0a1236;
+  background-image: url(/assets/img/triangles-bg.png);
+  color: #fff;
+}
+#values-text {
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 750px) {
+  #values-text {
+    margin-bottom: 4rem;
+  }
+}
+#cta-out {
+  margin: 0 auto;
+  background: url(/assets/img/buildings.jpg);
+  background-size: cover;
+  background-position: 0 50%;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  padding: 5rem 0 6rem;
+}
+#clients-subtitle {
+  font-size: 1.8rem;
+  margin: -2.5rem 0 1.875rem;
+  line-height: 1.3;
+}
+#client-logos {
+  margin-top: 4rem;
+}
+#clients .client-img {
   text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.9375rem;
+  transition: transform 150ms;
+  height: 6rem;
+  width: 15rem;
 }
-.layout-image img {
+@media only screen and (max-width: 650px) {
+  #clients .client-img {
+    width: 7rem;
+    height: 3rem;
+    padding: 0.3rem;
+  }
+}
+#clients .client-img img {
+  max-height: 100%;
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
 }
-
-/* === Footer Styles (Assuming a standard footer structure) === */
-footer {
-  padding: 2rem 1rem;
-  text-align: center;
-  border-top: 1px solid #eee;
-  margin-top: 0; /* Remove default margin if cut effect is last */
-  background: #f5f5f5; /* Example background */
-}
-
-/* Example Footer social-icon styling (keep if you use FontAwesome stacks) */
-footer .social-links a .fa,
-footer .fa-stack-1x,
-footer .fa-stack-1x.fa-inverse {
-  color: #053C45 !important; /* glyph = dark-teal */
-}
-footer .social-links a .fa {
-  background: #E2F0F2;   /* circle = light-teal */
-  border-radius: 50%;
-  padding: 9px;
-  width: 36px; height: 36px;
-  text-align: center; line-height: 18px; /* centres glyph */
-  transition: transform 0.2s ease;
-}
-footer .social-links a:hover .fa,
-footer .social-links a:focus .fa,
-footer a:hover .fa-stack {
+#clients .client-img:hover {
+  box-shadow: 0 0 10px #aaa;
   transform: scale(1.1);
 }
-footer .fa-stack-2x {
-  color: #E2F0F2 !important; /* circle */
+
+#portfolio-out, .portfolio-buffer {
+  background: #f5f5f5;
+  background-image: url(/assets/img/maze-bg.png);
 }
 
-
-/* === Responsive Design === */
-
-@media only screen and (max-width: 768px) { /* Tablet and Mobile */
-
-  /* 1. Add buffer/padding on mobile */
-  .content-container {
-      padding-left: 1rem;
-      padding-right: 1rem;
+#shinyapps-big .shinyapp {
+  display: inline-block;
+  vertical-align: top;
+  width: 25rem;
+  color: #3d3852;
+  margin: 0 1.125rem 2.5rem;
+  background: #fff;
+  transition: all 250ms;
+  text-align: left;
+  box-shadow: 0 0 1.25rem #ccc;
+  border: 1px solid #eee;
+}
+#shinyapps-big .shinyapp:hover {
+  box-shadow: 0 0 1.25rem #666;
+  background: #f2f6f9;
+  border-color: #aaa;
+  transform: translateY(-10px);
+}
+#shinyapps-big .shinyapp .apptitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.625rem 0.9375rem;
+}
+#shinyapps-big .shinyapp .appimg {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+#shinyapps-big .applink {
+  color: inherit;
+  display: block;
+  text-decoration: none !important;
+}
+#shinyapps-big .shinyapp .appdesc {
+  padding: 0 0.9375rem 0.9375rem;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+@media only screen and (max-width: 1899px) {
+  #shinyapps-big .shinyapp {
+    width: 20rem;
   }
-
-  /* Adjust header text size and layout */
-  #header {
-    padding: 4rem 0 5rem;
+}
+@media only screen and (max-width: 999px) {
+  #shinyapps-big .shinyapp {
+    width: 20rem;
   }
-  #title {
-    margin: 0 0 -0.5rem; /* Remove negative left margin */
-    font-size: 3rem;
+}
+@media only screen and (max-width: 750px) {
+  #shinyapps-big {
+    padding: 0 1rem;
   }
-  #subtitle {
-    margin-left: 0;
-    font-size: 1.5rem;
+  #shinyapps-big .shinyapp {
+    display: block;
+    margin: 1.75rem auto;
+    max-width: 100%;
   }
-  #sub-subtitle {
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-  }
-
-  /* Adjust section title size */
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  /* 5. Responsive AI Table */
-  .ai-table td {
-    display: block; /* Stack table cells */
-    width: 100%;    /* Make cells full width */
-    padding: 15px 5px; /* Adjust padding */
-    margin-bottom: 1rem; /* Space between stacked cells */
-    border-bottom: 1px solid #eee; /* Optional separator */
-  }
-   .ai-table tr td:last-child {
-      border-bottom: none; /* Remove border from last cell */
-      margin-bottom: 0;
-   }
-
-
-  /* 6. Stack Text-Image Layout */
-  .layout-text-image {
-    flex-direction: column-reverse; /* Stack image above text */
-    gap: 1.5rem; /* Reduce gap */
-  }
-  .layout-text, .layout-image {
-    flex: 1 1 100%; /* Make both take full width */
-    min-width: auto; /* Reset min-width */
-  }
-   .layout-image img {
-      max-width: 80%; /* Make image slightly smaller than full width */
-   }
-
-  /* Adjust publication list padding */
-  .publication-list li {
-    padding-left: 1.5em; /* Ensure space for icon */
-  }
-  .publication-list li::before {
-     left: 0.2em;
-  }
-
-  /* Adjust cut edge sizes for smaller screens */
-  .cut1, .cut2 {
-     clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw)); /* Larger visual cut */
-  }
-   .cut-buffer {
-      height: 5vw;
-      margin-top: -5vw;
-   }
-   .page-section.cut1, .page-section.cut2 {
-      padding-bottom: calc(4rem + 5vw);
-   }
 }
