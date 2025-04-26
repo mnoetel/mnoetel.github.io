@@ -1,0 +1,398 @@
+---
+title: "Michael Noetel's resume"
+author: Michael Noetel
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    self_contained: true
+    css: 
+      - override.css
+---
+
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+```
+
+```{r data-load, message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse); library(pagedown); library(rcrossref); library(cli); library(rscopus)
+
+scopus_id <- "57190857713"
+# Zan scopus_id <- "55584127400"
+api_key = Sys.getenv('Elsevier_API')
+df <- author_data(au_id = scopus_id,
+                   verbose = FALSE)
+pubs <- df$df %>%
+  janitor::clean_names() %>%
+  filter(subtype_description != "Erratum") %>%
+  select(-fa:-eid,
+         -pubmed_id:-au_id,
+         -dc_description) %>%
+  rename(journal = prism_publication_name,
+         doi = prism_doi,
+         title = dc_title,
+         cites = citedby_count,
+         first_author = dc_creator) %>%
+  filter(journal != "ACU Research Bank" & 
+           journal != "BehaviourWorks Australia" &
+           journal != "The Health & Fitness Journal of Canada") %>% 
+  mutate(year = year(as.Date(prism_cover_date))) %>%
+  filter(!is.na(year)) %>% #filter(year < 2020) %>%
+  mutate(journal = paste0("*",journal,"*"),
+         cite_word = ifelse(cites == 1, "citation","citations"),
+         cite_word = ifelse(cites == 0, "", cite_word),
+         cites = as.numeric(cites),
+         first_author = paste0(first_author, ", et al."),
+         doi = paste0("https://doi.org/", doi),
+         title = paste0("<a href = '",
+                      doi,
+                      "'>",
+                      title,
+                      "</a>")) %>%
+  arrange(desc(year), desc(cites))
+
+total_citations = sum(pubs$cites)
+
+# pubs$impact <- paste("Impact Factor: ", pubs$impact, sep = "")
+# pubs$impact = ifelse(pubs$impact == "Impact Factor: NA", "", pubs$impact)
+
+calc_h_index = function(cites) {
+  if(max(cites) == 0) return(0) # assuming this is reasonable
+  cites = cites[order(cites, decreasing = TRUE)]
+  tail(which(cites >= seq_along(cites)), 1)
+}
+h_index <- calc_h_index(pubs$cites)
+m_index <- h_index / (lubridate::interval("2019-05-10", Sys.time()) / lubridate::years(1))
+
+top_pubs <- pubs %>% filter(cites > 55)
+
+top_pubs$cites = ifelse(top_pubs$cites == 0, "N/A", paste("---",top_pubs$cites))
+
+#pubs$journal <- stringr::str_to_title(pubs$journal)
+
+pattern = "### {first_author} ({year}). {title}. {journal}
+
+{cites} {cite_word}
+
+N/A
+
+{year}
+
+"
+fix_grammar = function(x) gsub("(?<!\\.)\\.\\.(?!\\.)","\\.",x, perl = T) %>% gsub("\\?\\.","\\?",.)
+# regex interpretation. Match two dots and replace with one, if there's not an extra dot before, or after the two (three dots is a row).
+publications = glue::glue(pattern, .envir = as.environment(top_pubs)) %>% 
+   fix_grammar
+
+
+```
+
+# Aside
+
+<img src="mnoetel_circle.png" alt="Dr Michael Noetel"/>
+
+## Contact Info {#contact}
+
+-   <i class="fa fa-envelope"></i> [m.noetel@uq.edu.au](mailto:m.noetel@uq.edu.au){.email}
+-   <i class="fa fa-globe-asia"></i> [Website](http://noetel.com.au)
+-   <i class="fa fa-phone"></i> +61 414 822 353
+-   <i class="fa fa-youtube-play"></i> [Online Educational Videos](https://www.youtube.com/channel/UCpgI0gGaIli_fDZVqzrw5Mg?view_as=subscriber)
+
+## Skills {#skills}
+
+-   Teaching skills: interactive learning, curriculum design, online pedagogy
+
+-   Research skills: evidence synthesis (systematic reviews, meta-analysis), knowledge translation, statistics with R
+
+-   Leadership skills: project management, agile, scrum, transformational and servant leadership
+
+## Academic metrics {#metrics}
+
+h-index: `r h_index`<br/> Publications: `r nrow(pubs)`<br/> Citations: `r total_citations`<br/> Last updated: `r format(as.Date(Sys.time()), "%d %b %Y")`<br/> via Scopus
+
+# Main
+
+## Michael Noetel, PhD {#title}
+
+### **Academic and High Performance Psychologist**
+
+With my work, I want to do the most good that I can. Through my career, I want to help others do the same. For those who want to improve the world, I provide the knowledge and skills so they can do it best. I use methods like systematic reviews and meta-analyses to try and figure out the best approach to problems. Then I use online educational interventions to deploy those approaches cost-effectively, at scale. I use theory and evidence to make those interventions compelling, time-efficient, and effective.
+
+**Summary of Teaching**
+
+I use evidence-informed decision-making both in the content of what I teach and in the process of how I teach. I teach students how to think critically using evidence, and I build professional skills supported by systematic reviews. I use the same philosophy in my own teaching, using pedagogical approaches supported by top level evidence. I lead others to follow this approach, both through collaborations and coaching programs I established.
+
+*Leadership*
+
+-   Led or mentored lead for 6 university teaching development grants (totalling \$134,750)
+-   Co-founded [INSPIRE](https://www.inspiretoolkit.com.au/), a world-first evidence-centre for learning and teaching in universities. We create, curate, and disseminate evidence for what works in higher ed.
+-   Program director (Academic) for the Master of Psychology Program since 2023.
+
+*Accolades*
+
+-   Received 9 awards for teaching including an [AAUT](https://www.universitiesaustralia.edu.au/policy-submissions/teaching-learning-funding/australian-awards-for-university-teaching/), a [SFHEA](https://www.advance-he.ac.uk/fellowship/senior-fellowship), and a [VC's Award](https://staff.acu.edu.au/our_university/learning_and_teaching/grants-and-awards/citations-and-awards/vc-teaching-awards)
+-   Average student evaluations of learning and teaching of 4.8 / 5 after 2,390 students
+
+**Summary of Research**
+
+I have research experience on large projects with many stakeholders, complex issues, and international research teams. To meet those challenges, I use best-in-class research management processes to do rigorous, impactful, and reproducible work (e.g., Asana, [Agile](https://www.nature.com/articles/d41586-019-01184-9) research, Scrum). I use my subject matter expertise in leadership and high performance psychology to help my teams to do high-performance research.
+
+*Grants*
+
+-   Chief investigator on \$3,694,120 of competitive Category 1 grants
+-   Average yearly grant income over 3x higher than the sector weighted benchmark
+-   Grant collaborators at University of Oxford, University of British Columbia, University of Helsinki, University of Birmingham, Northeastern University, & University of Otago
+
+*Publications*
+
+-   Scopus m-index of `r round(m_index,1)` where \> 2 ['characterizes outstanding scientists, likely to be found only at the top universities or major research laboratories'](https://www.pnas.org/content/102/46/16569)
+-   [Category normalised citation index](http://help.prod-incites.com/inCites2Live/indicatorsGroup/aboutHandbook/usingCitationIndicatorsWisely/normalizedCitationImpact.html) of 3.7; 53% of papers in the top 10% for citations
+-   Published in the [SJR](https://www.scimagojr.com/) #1 journals for [psychology](https://psycnet.apa.org/record/2022-22515-003), [experimental psychology](https://www.nature.com/articles/s41562-023-01712-8), [aging](https://www.sciencedirect.com/science/article/pii/S1568163722000332), [paediatrics](https://jamanetwork.com/journals/jamapediatrics/article-abstract/2779446), [education](https://journals.sagepub.com/doi/abs/10.3102/00346543211052329) ([three](https://journals.sagepub.com/doi/abs/10.3102/0034654321990713) [times](https://journals.sagepub.com/doi/abs/10.3102/0034654321997918)), and [sport science](https://bjsm.bmj.com/content/55/13/721.info) ([twice](https://bjsm.bmj.com/content/bjsports/early/2020/12/20/bjsports-2020-103277.full.pdf))
+
+*Impact & Engagement*
+
+-   Developed the content [for award winning](https://www.acu.edu.au/about-acu/news/2021/june/high-honour-for-iplay), [scalable physical activity program](https://www.impact.acu.edu.au/community/kids-heart-health-and-fitness-improved-by-school-program) (published in [JAMA Pediatrics](https://jamanetwork.com/journals/jamapediatrics/article-abstract/2779446)), delivered to 190 schools, helping over 50,000 students
+-   Developed the content for a [coach leadership and athlete resilience project](https://aheadofthegame.org.au/), scaled worldwide to 500 clubs and 20,000 boys
+-   All 4 current Cat. 1 grants have industry partners, such as the NSW Departments of Education and Health
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+### **Doctor of Philosophy (Psychology)**
+
+Institute for Positive Psychology and Education<br/>Australian Catholic University
+
+North Sydney, NSW
+
+2019
+
+### **Masters of Applied Psychology (Sport and Exercise)**
+
+The University of Queensland
+
+St Lucia, QLD
+
+2010
+
+### **Bachelor of Science (Advanced, Honours)**
+
+Double Major: Psychology; Computational Science<br/>University of Sydney
+
+Camperdown, NSW
+
+2008
+
+## Academic Experience {data-icon="laptop"}
+
+### **Associate Professor - Teaching and Research**
+
+School of Psychology<br/>The University of Queensland
+
+St Lucia, QLD
+
+Present - 2025
+
+### **Senior Lecturer - Teaching and Research**
+
+School of Psychology<br/>The University of Queensland
+
+St Lucia, QLD
+
+2024 - 2022
+
+## Accreditations {data-icon="users"}
+
+### **Senior Fellow, Higher Education Academy (SFHEA)**
+
+AdvanceHE
+
+N/A
+
+Present - 2020
+
+### **Endorsed Sport and Exercise Psychologist**
+
+Australian Health Practitioner Regulation Agency
+
+N/A
+
+Present - 2014
+
+### **Board Approved Supervisor**
+
+Australian Health Practitioner Regulation Agency
+
+N/A
+
+Present - 2015
+
+## Awards {data-icon="award"}
+
+### **Vice-Chancellor's Award for Excellence in Teaching**
+
+Australian Catholic University
+
+N/A
+
+2021
+
+### **Vice-Chancellor's Staff Excellence Award: Excellence in Research & Research Partnership**
+
+Australian Catholic University
+
+N/A
+
+2021
+
+iPLAY Team
+
+### **Faculty of Health Sciences Employee Values Award**
+
+Australian Catholic University
+
+N/A
+
+2021
+
+### **Excellence and Innovation in Public Health Education and Research (Team Award)**
+
+Council of Academic Public Health Institutions Australasia
+
+N/A
+
+2021
+
+iPLAY Team
+
+### **Citation for Outstanding Contributions to Student Learning**
+
+Australian Awards for University Teaching
+
+N/A
+
+2020
+
+### **Citations for Outstanding Contributions to Student Learning**
+
+Australian Catholic University
+
+N/A
+
+2019
+
+## Top Publications {data-icon="file"}
+
+```{r results = "asis", echo = FALSE, message = FALSE }
+
+publications
+
+```
+
+
+## Media coverage {data-icon="newspaper"}
+
+I've worked to get my research out into the public to change practice. For example, I was invited on <a href = "https://www.youtube.com/watch?v=mEERjOv6pJA">national primetime TV</a> for my paper in <a href = "https://www.nature.com/articles/s41562-023-01712-8">Nature Human Behaviour</a>.
+
+### Exercise for depression
+<a href = "https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html">CNN</a>, <a href="https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf?shareToken=227838c1a4d352d416b37fb188f768fe">The Times</a>, BBC, Good Morning America, <a href = "https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa">The Australian</a>, <a href = "https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441">The Conversation</a>, <a href = "https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102">ABC Radio National</a>, Triple J, Triple M, Hit Radio and <a href = "https://bmj.altmetric.com/details/159533224/#score">more</a>
+
+N/A
+
+2024
+
+### Effective altruism
+
+<a href = "https://www.abc.net.au/religion/the-case-for-effective-altruism/13359912"> ABC Religion & Ethics</a>, <a href = "https://www.abc.net.au/news/2022-01-09/are-we-making-a-difference-when-we-donate-to-charity/100722158"> ABC Radio National</a>, 2GB, ABC Radio Canberra, ABC Radio Hobart
+
+N/A
+
+2021
+
+### Videos in higher education
+
+<a href = "https://www.forbes.com/sites/nickmorrison/2021/02/17/students-get-better-grades-if-you-replace-their-teachers-with-videos/?sh=3f5256385079"> Forbes</a>, <a href = "https://theconversation.com/videos-wont-kill-the-uni-lecture-but-they-will-improve-student-learning-and-their-marks-142282"> The Conversation</a>, <a href = "https://www.altmetric.com/details/100294946/news"> and others, see Altmetric</a>
+
+N/A
+
+2020
+
+## Top Research Grants {data-icon="file-invoice-dollar"}
+
+### Promotion of evidence-based physical activity for older adults and people with disabilities by health professionals
+
+National Health and Medical Research Council (PRC1: 2011157; \$1,440,375)
+
+N/A
+
+2025 - 2022
+
+### Effectiveness and cost effectiveness of a time-efficient school-based physical activity intervention for adolescents living with disability
+
+Medical Research Future Fund (MRFF: 2007095; \$736,399)
+
+N/A
+
+2023 - 2021
+
+### Square eyes or all lies? Understanding children's exposure to screens
+
+Australian Research Council Discovery Project (Ref: DP200101912; \$658,544)
+
+N/A
+
+2023 - 2020
+
+### PLAY for Inclusion --- Teachers working with children with intellectual disability
+
+Move It AUS - Participation Grants Program (Ref: PAR006502018; \$268,802)
+
+N/A
+
+2020 - 2019
+
+### Engaging students during the early years of secondary school (iTEACH Project)
+
+Australian Research Council Discovery Project (Ref: DP160102625; \$590,000)
+
+N/A
+
+2020 - 2016
+
+## Engagement {data-icon="comments"}
+
+### **Australian Institute of Sport**
+
+National Quality Assurance Steering Committee
+
+N/A
+
+2022 - 2021
+
+### **Australian Psychological Society (APS)**
+
+College of Sport and Exercise Psychologists (CSEP)
+
+N/A
+
+2021 - 2015
+
+--- National Treasurer: 2015-2017; 2019-2021<br/> --- NSW Chair: 2015-2017<br/> --- QLD Chair: 2019-2021<br/>
+
+### **Effective Altruism Australia**
+
+Director and Chairperson
+
+N/A
+
+Present - 2021
+
+### **Effective Altruism Global x Australasia Conference**
+
+Organising Committee
+
+N/A
+
+Present - 2023

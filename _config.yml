@@ -1,4 +1,4 @@
-title: "Michael Noetel – Psychology and AI Governance"
+title: "Michael Noetel, PhD"
 
 author: Michael Noetel
 
@@ -12,6 +12,7 @@ navbar-links:
   CV            : "mnoetel_resume.html"
 
 avatar: "/assets/img/avatar-icon.png"
+favicon: "/assets/img/favicon.png"
 
 round-avatar: true
 
