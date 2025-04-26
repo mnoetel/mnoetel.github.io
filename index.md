@@ -101,10 +101,10 @@ ext-js:
         <li class="media-item">
             <span class="fa-li fa fa-university"></span>
             <h3>Affiliations & Roles</h3>
-            <ul class="fa-ul" style="margin-top: 0.5rem;">
-                <li class="media-item">Affiliate Researcher, <strong>MIT FutureTech</strong></li>
-                <li class="media-item">Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
-                <li class="media-item">Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
+            <ul style="margin-top: 0.5rem; list-style: disc; padding-left: 1.5rem;">
+                <li>Affiliate Researcher, <strong>MIT FutureTech</strong></li>
+                <li>Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
+                <li>Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
             </ul>
         </li>
     </ul>
@@ -132,7 +132,7 @@ ext-js:
 <div id="publications-out" class="page-section cut2">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
-    <ol style="padding-left:1.2rem;">
+    <ol>
       <li><strong>Noetel M.</strong> et al. (2024). <a href="https://www.bmj.com/content/384/bmj-2023-075847" target="_blank"><em>Effect of exercise for depression: systematic review & network meta‑analysis</em>. <em>BMJ</em>.</a></li>
       <li>Sanders T., <strong>Noetel M.</strong> et al. (2024). <a href="https://www.nature.com/articles/s41562-023-01712-8" target="_blank"><em>Benefits & risks of youth screen use</em>. <em>Nature Human Behaviour</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2023). <a href="https://link.springer.com/article/10.1007/s10648-023-09786-6" target="_blank"><em>Prediction vs explanation in educational psychology</em>. <em>Educational Psychology Review</em>.</a></li>
