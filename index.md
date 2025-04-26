@@ -2,7 +2,7 @@
 layout: base
 title: "Michael Noetel PhD"
 css:
-  - /assets/css/index.css
+  - /assets/css/custom-styles.css
 ext-css:
   - //fonts.googleapis.com/css?family=Roboto:400,700
   - //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css # Added Font Awesome for icons
