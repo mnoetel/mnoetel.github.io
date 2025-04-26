@@ -133,7 +133,7 @@ ext-js:
  <div class="cut-buffer"></div>
  
  <!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
- <div id="media-out" class="page-section grey-section"><!-- white -->
+ <div id="media-out" class="page-section grey-section cut1"><!-- white -->
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
