@@ -121,7 +121,7 @@ ext-js:
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
     <ol style="padding-left:1.2rem;">
-      <li><a href="https://www.bmj.com/content/384/bmj-2023-075847" target="_blank"><strong>Noetel M.</strong> et al. (2024). <em>Effect of exercise for depression: systematic review & network meta‑analysis</em>. <em>BMJ</em>.</a></li>
+      <li><strong>Noetel M.</strong> et al. (2024). <em><a href="https://www.bmj.com/content/384/bmj-2023-075847" target="_blank">Effect of exercise for depression: systematic review & network meta‑analysis</em>. <em>BMJ</em>.</a></li>
       <li>Sanders T., <strong>Noetel M.</strong> et al. (2024). <a href="https://www.nature.com/articles/s41562-023-01712-8" target="_blank"><em>Benefits & risks of youth screen use</em>. <em>Nature Human Behaviour</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2023). <a href="https://link.springer.com/article/10.1007/s10648-023-09786-6" target="_blank"><em>Prediction vs explanation in educational psychology</em>. <em>Educational Psychology Review</em>.</a></li>
       <li><strong>Noetel M.</strong> et al. (2022). <a href="https://journals.sagepub.com/doi/10.3102/00346543211052329" target="_blank"><em>Multimedia design for learning</em>. <em>Review of Educational Research</em>.</a></li>
@@ -133,7 +133,7 @@ ext-js:
  <div class="cut-buffer"></div>
  
  <!--‑‑‑‑‑‑‑‑‑‑ MEDIA (white) ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
- <div id="media-out" class="page-section grey-section cut2"><!-- white -->
+ <div id="media-out" class="page-section grey-section"><!-- white -->
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
