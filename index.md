@@ -51,11 +51,11 @@ ext-js:
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
     <p>I’m an academic working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce the worst risks from advanced AI and people do the most good they can.</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Build expert consensus on AI "red‑line" capabilities and maintain living evidence maps tracking progress toward them.</li>
-      <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 2,000+ postgraduate learners, nine teaching awards, average rating 4.8 / 5.</li>
-      <li><span class="fa-li fa fa-globe"></span><strong>Impact:</strong> Cited in Australia’s <em>Safe & Responsible AI</em> report, the 2024 <em>International AI Safety Report</em>, and WHO guidelines.</li>
+      <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Track record of <a href = "https://www.scopus.com/authid/detail.uri?authorId=57190857713">highly cited research</a> that influences policy; expert in systematic reviews, meta-analyses, and Delphi studies.</li>
+      <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 3,000+ learners including 50+ postgraduate researchers, eight teaching awards, average rating 4.8 / 5.</li>
+      <li><span class="fa-li fa fa-globe"></span><strong>Impact:</strong> Chair and Director of <a href = "eaa.org.au">Effective Altruism Australia</a>, Cited in Australia’s <em>Safe & Responsible AI</em> report, the 2024 <em>International AI Safety Report</em>, and WHO guidelines.</li>
     </ul>
-    <p>When not racing GPT‑4 to write cleaner code, you’ll find me surfing or optimising R scripts for reproducibility.</p>
+    <p>Originally from Sydney but fell in love with a Queenslander. Proud dad of three gorgeous boys.</p>
   </div>
 </div>
 
