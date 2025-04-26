@@ -187,8 +187,8 @@ ext-js:
             </ul>
         </li>
        <li class="media-item"><span class="fa-li fa fa-handshake"></span>Briefings to two Australian federal ministers.</li>
-       <li class="media-item"><span class="fa-li fa fa-microphone"></span>Keynote presentations, workshops, <a href="https://cdn.sanity.io/files/4rsg7ofo/production/8c29e21d9b6d5e65322b45535383f99b1081b408.mp3" target="_blank">live radio</a> and <a href="https://www.youtube.com/@noetel" target="_blank">primetime TV</a>.</li>
-       <li class="media-item"><span class="fa-li fa fa-video"></span>YouTube channel <strong><a href="https://www.youtube.com/@noetel" target="_blank">primetime TV</a></strong> – 300 K+ views on evidence‑based teaching.</li>
+       <li class="media-item"><span class="fa-li fa fa-microphone"></span>Keynote presentations, workshops, <a href="https://cdn.sanity.io/files/4rsg7ofo/production/8c29e21d9b6d5e65322b45535383f99b1081b408.mp3" target="_blank">live radio</a> and <a href="https://www.youtube.com/watch?v=mEERjOv6pJA" target="_blank">primetime TV</a>.</li>
+       <li class="media-item"><span class="fa-li fa fa-video"></span><strong><a href="https://www.youtube.com/@noetel" target="_blank">YouTube channel </a></strong> – 300 K+ views on evidence‑based teaching.</li>
      </ul>
 </div>
 </div>
