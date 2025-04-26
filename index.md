@@ -104,7 +104,7 @@ ext-js:
 
 <div class="cut-buffer"></div>
 
-<div id="publications-out" class="page-section cut2">
+<div id="publications-out" class="page-section">
   <div id="publications" style="max-width:900px; margin:0 auto; text-align:left;">
     <h2 class="section-title"><span class="fa fa-book-open"></span> Selected Publications</h2>
     <ol style="padding-left:1.2rem;">
@@ -119,7 +119,7 @@ ext-js:
  
  <div class="cut-buffer"></div>
  
- <div id="media-out" class="page-section cut2">
+ <div id="media-out" class="page-section">
    <div id="media" style="max-width:1100px; margin:0 auto; text-align:left;">
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
  
