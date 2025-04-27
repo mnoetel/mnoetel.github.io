@@ -28,11 +28,11 @@ footer a:hover .fa-stack      { transform: scale(1.1); transition: transform .2s
 }
 
 #header a{
-  color: #053C45 !important;
+  color: #0C869B !important;
 }
 
 #header a:hover{
-  color: #0C869B5;
+  color: #053C45;
 }
 
 
@@ -46,11 +46,11 @@ body, html {
 
 p a {
   text-decoration: none;
-  color: #053C45;
+  color: #0C869B;
 }
 p a:hover{
   text-decoration: underline;
-  color: #0C869B;
+  color: #053C45;
 }
 
 /* --- Cut Effects --- */
