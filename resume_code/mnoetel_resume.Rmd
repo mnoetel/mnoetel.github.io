@@ -55,6 +55,8 @@ pubs <- df$df %>%
                       "</a>")) %>%
   arrange(desc(year), desc(cites))
 
+## Add Editor’s Choice for roberta's paper
+
 total_citations = sum(pubs$cites)
 # pubs$impact <- paste("Impact Factor: ", pubs$impact, sep = "")
 # pubs$impact = ifelse(pubs$impact == "Impact Factor: NA", "", pubs$impact)
@@ -120,7 +122,7 @@ I work to reduce catastrophic risks from advanced AI while helping others do the
 
 ### **Select AI Governance Contributions**
 - **SARA Project**: Led the [Survey of Assessing Risks from AI](aigovernance.org.au), which informed Australia’s Safe and Responsible AI in Australia discussion paper.
-- **AI Risk Repository**: Co‑authored [repository](https://airisk.mit.edu/) of AI risk pathways, which was presented at the Paris AI Action Summit and cited in the International AI Safety Report (2024).
+- **AI Risk Repository**: Co‑authored [repository](https://airisk.mit.edu/) of AI risk pathways, which was cited in the International AI Safety Report (2024).
 - **Field‑building**: Facilitated three cohorts of the [AGI Safety Fundamentals Governance Course](https://bluedot.org/) and supervise graduate research on frontier evals, AI literacy, AI consciousness, and public risk perception.
 
 ### **Teaching & Engagement Impact**
@@ -527,7 +529,14 @@ publications
 
 ## Media coverage {data-icon="newspaper"}
 
-I've worked to get my research out into the public to change practice. For example, I was invited on <a href = "https://www.youtube.com/watch?v=mEERjOv6pJA">national primetime TV</a> for my paper in <a href = "https://www.nature.com/articles/s41562-023-01712-8">Nature Human Behaviour</a>.
+I've worked to get my research out into the public to change practice. For example, I was invited on <a href = "https://www.youtube.com/watch?v=mEERjOv6pJA">national primetime TV</a> for my screen time research in <a href = "https://www.nature.com/articles/s41562-023-01712-8">Nature Human Behaviour</a>.
+
+### Screen use and socio-emotional problems
+<a href = "https://www.msn.com/en-au/news/australia/researchers-warn-screen-time-fuels-behaviour-issues-in-vicious-cycle/vi-AA1GsWUt?ocid=socialshare#details">ABC News 24</a>, <a href = "https://www.goodmorningamerica.com/wellness/story/increased-screen-time-linked-aggression-anxiety-low-esteem-122699364">Good Morning America</a>, <a href ="https://www.heraldsun.com.au/victoria-education/advice/screen-time-warning-the-bad-habit-driving-increasing-rates-of-childhood-anxiety-aggression/news-story/d5059e61cb9edd390b966f2ff33074f3?btr=e38aa6155f94c25acc3792c7019eef8c">National Newscorp Mastheads</a>, <a href = "https://drive.google.com/file/d/1AXGr8wyFTwqphhSKTezwgE9LT8ms_M7w/view?usp=drive_link">Nine News</a>
+
+N/A
+
+2025
 
 ### Exercise for depression
 <a href = "https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html">CNN</a>, <a href="https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf?shareToken=227838c1a4d352d416b37fb188f768fe">The Times</a>, BBC, Good Morning America, <a href = "https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa">The Australian</a>, <a href = "https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441">The Conversation</a>, <a href = "https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102">ABC Radio National</a>, Triple J, Triple M, Hit Radio and <a href = "https://bmj.altmetric.com/details/159533224/#score">more</a>
@@ -621,6 +630,16 @@ Present - 2025
 Primary Supervisor
 
 ### **Brynlea Gibson**
+
+Doctor of Philosophy Candidate, The University of Queensland
+
+N/A
+
+Present - 2025
+
+Associate Supervisor
+
+### **Lena Hall**
 
 Doctor of Philosophy Candidate, The University of Queensland
 

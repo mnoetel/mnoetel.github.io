@@ -96,7 +96,7 @@ ext-js:
         <li class="media-item">
             <span class="fa-li fa fa-database"></span>
             <h3><a href="https://airisk.mit.edu/" target="_blank">AI Risk Repository</a></h3>
-            <p>Open catalogue of risks from AI. Was presented at <a href = "https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia">Paris AI Action Summit</a> and cited in the 2025 <a href = "https://www.gov.uk/government/publications/international-ai-safety-report-2025">International AI Safety Report</a>.</p>
+            <p>Open catalogue of risks from AI. Cited in the 2025 <a href = "https://www.gov.uk/government/publications/international-ai-safety-report-2025">International AI Safety Report</a>.</p>
         </li>
         <li class="media-item">
             <span class="fa-li fa fa-university"></span>
