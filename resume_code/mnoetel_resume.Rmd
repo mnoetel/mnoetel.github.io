@@ -531,6 +531,13 @@ publications
 
 I've worked to get my research out into the public to change practice. For example, I was invited on <a href = "https://www.youtube.com/watch?v=mEERjOv6pJA">national primetime TV</a> for my screen time research in <a href = "https://www.nature.com/articles/s41562-023-01712-8">Nature Human Behaviour</a>.
 
+### Risks from advanced artificial intelligence
+<a href = "https://10.com.au/news/national/experts-warn-artificial-intelligence-will-lead-to-human-extinction-10-news/tpv251114zhrma">Ten News+</a>, <a href = "https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/">SmartCompany</a>/<a href = "https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175">The Conversation</a>, <a href = "https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067">The Conversation</a>
+
+N/A
+
+2024
+
 ### Screen use and socio-emotional problems
 <a href = "https://www.msn.com/en-au/news/australia/researchers-warn-screen-time-fuels-behaviour-issues-in-vicious-cycle/vi-AA1GsWUt?ocid=socialshare#details">ABC News 24</a>, <a href = "https://www.goodmorningamerica.com/wellness/story/increased-screen-time-linked-aggression-anxiety-low-esteem-122699364">Good Morning America</a>, <a href ="https://www.heraldsun.com.au/victoria-education/advice/screen-time-warning-the-bad-habit-driving-increasing-rates-of-childhood-anxiety-aggression/news-story/d5059e61cb9edd390b966f2ff33074f3?btr=e38aa6155f94c25acc3792c7019eef8c">National Newscorp Mastheads</a>, <a href = "https://drive.google.com/file/d/1AXGr8wyFTwqphhSKTezwgE9LT8ms_M7w/view?usp=drive_link">Nine News</a>
 
@@ -730,6 +737,18 @@ N/A
 Co-supervisor
 
 ## Research Grants {data-icon="file-invoice-dollar"}
+
+### AI Risk Index: Assessing influential organizations' responses to risks from artificial intelligence
+
+Subaward with Massachusetts Institute of Technology
+
+N/A
+
+2026 - 2025
+
+**Noetel, M.**, Saeri, A.
+
+--- \$340,660
 
 ### Seeing the Bigger Picture: Exploring Children's Screen Time and Outcomes through Collaborative Data Analysis
 
