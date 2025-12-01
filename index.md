@@ -90,8 +90,8 @@ ext-js:
     <ul class="fa-ul">
         <li class="media-item">
             <span class="fa-li fa fa-poll-h"></span>
-            <h3><a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">SARA Survey</a></h3>
-            <p>Largest survey of Australian attitudes to AI risks (cited in <a href = "https://consult.industry.gov.au/ai-mandatory-guardrails"> Australian Government's Mandatory Guiderails Proposal Paper</a>).</p>
+            <h3><a href="https://aigovernance.org.au/" target="_blank">SARA Surveys</a></h3>
+            <p>Largest surveys of Australian attitudes to AI risks (cited in <a href = "https://consult.industry.gov.au/ai-mandatory-guardrails"> Australian Government's Mandatory Guiderails Proposal Paper</a>; featured by <a href="https://stories.uq.edu.au/contact-magazine/80-per-cent-of-australians-think-ai-risk-is-a-global-priority/index.html" target="_blank">The Conversation and UQ</a>).</p>
         </li>
         <li class="media-item">
             <span class="fa-li fa fa-database"></span>
