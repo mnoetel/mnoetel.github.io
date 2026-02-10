@@ -12,3 +12,7 @@ Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
 .Rproj.user
+
+# Resume build artifacts
+resume_code/.wos_cache.json
+resume_code/test_response.json
