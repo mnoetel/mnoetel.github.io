@@ -36,7 +36,7 @@
 }
 
 // ── Load dynamic data ──
-#let data = json("publications.json")
+#let data = json("publications_ytpa.json")
 #let metrics = data.metrics
 #let pubs = data.publications
 
@@ -257,24 +257,9 @@
 
 = Accreditations
 
-#resume-entry(
-  title: "Senior Fellow, Higher Education Academy (SFHEA)",
-  location: "AdvanceHE",
-  date: "2020–Present",
-  description: "",
-)
-#resume-entry(
-  title: "Registered Psychologist",
-  location: "AHPRA",
-  date: "2012–Present",
-  description: "",
-)
-#resume-entry(
-  title: "Board Approved Supervisor",
-  location: "AHPRA",
-  date: "2015–Present",
-  description: "",
-)
+#resume-item[
+  SFHEA (2020); Registered Psychologist, AHPRA (2012); Board Approved Supervisor (2015)
+]
 
 = Awards
 
@@ -282,17 +267,17 @@
 #award-entry("Vice-Chancellor's Staff Excellence Award: Research & Research Partnership", "Australian Catholic University – iPLAY Team", "2021")
 #award-entry("Excellence and Innovation in Public Health Education and Research (Team)", "CAPHIA – iPLAY Team", "2021")
 #award-entry("Citation for Outstanding Contributions to Student Learning", "Australian Awards for University Teaching", "2020")
-#award-entry("Best Presentation in Educational Technology", "CQUniversity", "2020")
 #award-entry("Citations for Outstanding Contributions to Student Learning", "Australian Catholic University", "2019")
-#award-entry("Citations (Early Career) for Outstanding Contributions to Student Learning", "Australian Catholic University", "2015")
 
 // ── Dynamic Publications ──
 
-= Publications (#str(metrics.n_pubs) total; #str(metrics.total_citations) citations; h-index: #str(metrics.h_index))
+= Select Publications (#str(metrics.n_pubs) total; #str(metrics.total_citations) citations; h-index: #str(metrics.h_index))
 
 #for pub in pubs {
   pub-entry(pub)
 }
+
+#text(size: 0.85em)[Full publication list: #link("https://orcid.org/0000-0002-2993-5686")[orcid.org/0000-0002-2993-5686]]
 
 = Research Grants
 
@@ -305,7 +290,6 @@
 #grant-entry("Square eyes or all lies? Understanding children's exposure to screens", "ARC Discovery (DP200101912)", "2020–2023", [\$658,544])
 #grant-entry("PLAY for Inclusion – Teachers working with children with intellectual disability", "Move It AUS", "2019–2020", [\$268,802])
 #grant-entry("Engaging students during the early years of secondary school (iTEACH)", "ARC Discovery (DP160102625)", "2016–2020", [\$590,000])
-#grant-entry("Other grants", "Sport Australia / NSW DoE / QAS", "2018–2019", [\$188,744])
 
 = Media Coverage
 
@@ -316,7 +300,7 @@
     text(weight: "bold")[Screen use and socio-emotional problems],
     text[2025],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://www.msn.com/en-au/news/australia/researchers-warn-screen-time-fuels-behaviour-issues-in-vicious-cycle/vi-AA1GsWUt")[ABC News 24], #link("https://www.goodmorningamerica.com/wellness/story/increased-screen-time-linked-aggression-anxiety-low-esteem-122699364")[Good Morning America], #link("https://drive.google.com/file/d/1AXGr8wyFTwqphhSKTezwgE9LT8ms_M7w/view")[Nine News], #link("https://www.heraldsun.com.au/victoria-education/advice/screen-time-warning-the-bad-habit-driving-increasing-rates-of-childhood-anxiety-aggression/news-story/d5059e61cb9edd390b966f2ff33074f3")[National Newscorp]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://www.altmetric.com/details/176424563")[Altmetric: 122 news outlets, 21 Bluesky posts, cited in policy documents]. #link("https://www.msn.com/en-au/news/australia/researchers-warn-screen-time-fuels-behaviour-issues-in-vicious-cycle/vi-AA1GsWUt")[ABC News 24], #link("https://www.goodmorningamerica.com/wellness/story/increased-screen-time-linked-aggression-anxiety-low-esteem-122699364")[Good Morning America], #link("https://drive.google.com/file/d/1AXGr8wyFTwqphhSKTezwgE9LT8ms_M7w/view")[Nine News], #link("https://www.heraldsun.com.au/victoria-education/advice/screen-time-warning-the-bad-habit-driving-increasing-rates-of-childhood-anxiety-aggression/news-story/d5059e61cb9edd390b966f2ff33074f3")[National Newscorp], RTBF, CNN]
 ]
 
 #block(above: 1em, below: 0.6em)[
@@ -333,10 +317,20 @@
   #grid(
     columns: (1fr, auto),
     align: (left, right),
+    text(weight: "bold")[Children and screens (umbrella review)],
+    text[2024],
+  )
+  #text(size: 0.9em, fill: luma(80))[#link("https://www.altmetric.com/details/155772807")[Altmetric: 65 news outlets, 4 policy documents, 4 Wikipedia pages]. #link("https://www.smh.com.au")[Sydney Morning Herald], Le Monde, Le Figaro, El País, Daily Mail, Psychology Today, #link("https://theconversation.com/tv-can-be-educational-but-social-media-likely-harms-mental-health-what-70-years-of-research-tells-us-about-children-and-screens")[The Conversation]]
+]
+
+#block(above: 1em, below: 0.6em)[
+  #grid(
+    columns: (1fr, auto),
+    align: (left, right),
     text(weight: "bold")[Exercise for depression],
     text[2024],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://bmj.altmetric.com/details/159533224/")[Altmetric: 95 news outlets, 1,500+ X posts, 15 YouTube creators, 5 Wikipedia pages]. #link("https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html")[CNN], #link("https://www.goodmorningamerica.com/video/107264638")[Good Morning America], #link("https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf")[The Times], #link("https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102")[ABC Radio], #link("https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa")[The Australian], #link("https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441")[The Conversation], #link("https://natgeo.nikkeibp.co.jp//atcl/news/25/101700570/")[National Geographic]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://bmj.altmetric.com/details/159533224/")[Altmetric: 111 news outlets, 1,546 X posts, 15 YouTube creators, 5 Wikipedia pages, 535 citations]. #link("https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html")[CNN], #link("https://www.goodmorningamerica.com/video/107264638")[Good Morning America], #link("https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf")[The Times], NPR, #link("https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102")[ABC Radio], #link("https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa")[The Australian], #link("https://natgeo.nikkeibp.co.jp//atcl/news/25/101700570/")[National Geographic]]
 ]
 
 #block(above: 1em, below: 0.6em)[
@@ -364,29 +358,14 @@
 
 #resume-item[
   - *Government briefings*: Ministry of Education, Republic of China – Taiwan (2025); Australian Depts of Industry, Science and Resources (2025), Education (2025), and Health, Disability and Ageing (2024).
-  - *Invited talks*: University of Pennsylvania, Master of Behavioral and Decision Sciences (2026); Universitas Indonesia (2025, 2026); EAGxAustralia keynotes/workshops (2019, 2022, 2023, 2025); Berkeley Effective Altruism (2022); HERDSA (2023); NASPSPA, Hawaii (2022); Prevention of Falls CRE (2022); Sports Medicine Australia (2020); AdvanceHE Teaching and Learning Conference (2021).
+  - *Invited talks*: University of Pennsylvania, Master of Behavioral and Decision Sciences (2026); Universitas Indonesia (2025, 2026); EAGxAustralia keynotes/workshops (2019, 2022, 2023, 2025); Berkeley Effective Altruism (2022); HERDSA (2023); NASPSPA, Hawaii (2022); Sports Medicine Australia (2020).
 ]
 
 = Research Supervision
 
-#resume-entry(
-  title: "PhD Primary Supervisor",
-  location: "",
-  date: "2019–Present",
-  description: "A. Ahmadi, R. Vasconcellos, S. Griffith, G. Swaryandini, G. Hassed, M. Veron",
-)
-#resume-entry(
-  title: "PhD Associate Supervisor",
-  location: "",
-  date: "2021–Present",
-  description: "B. Gibson, L. Hall, A. Urooj, E. Tremaine, D. Venini",
-)
-#resume-entry(
-  title: "Honours Primary Supervisor",
-  location: "",
-  date: "2023–2025",
-  description: "Teams of ~20 Honours students (2024, 2025); Tabi Ward, Keira Wallace, Jake Morril (2023)",
-)
+#resume-item[
+  PhD supervisor: 6 primary, 5 associate (2019–present). Honours: ~20 students/year (2023–2025).
+]
 
 = Service & Engagement
 
@@ -413,10 +392,4 @@
   location: "Sport, Exercise and Performance Psychology (APA)",
   date: "2025–Present",
   description: "",
-)
-#resume-entry(
-  title: "College of Sport and Exercise Psychologists",
-  location: "Australian Psychological Society",
-  date: "2015–2021",
-  description: "National Treasurer (2015–2017; 2019–2021); NSW Chair (2015–2017); QLD Chair (2019–2021)",
 )
