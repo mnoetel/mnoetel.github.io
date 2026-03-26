@@ -143,8 +143,8 @@
 
 #resume-item[
   - *Award-winning educator*: 9 national & institutional awards, incl. Australian Award for University Teaching & Vice-Chancellor's Award for Excellence. Mean student rating 4.8/5 across 2,390 students.
-  - *Public science communicator*: 10 _Conversation_ articles (250K+ reads); media interviews for CNN, BBC, ABC, The Times, including TV and live radio; invited to brief federal parliamentarians.
-  - *Chair*, Effective Altruism Australia since 2021 – stewarding AU\$7.5M+/yr to cost-effective global-health and climate change programs.
+  - *Public science communicator*: 10 _Conversation_ articles (250K+ reads); media interviews for CNN, BBC, ABC, PBS NewsHour, The Times, including TV and live radio; invited to brief federal parliamentarians.
+  - *Chair*, Effective Altruism Australia since 2021 – stewarding AU\$7.5M+/yr to cost-effective global-health and climate programs.
 ]
 
 = Research Excellence
@@ -336,7 +336,7 @@
     text(weight: "bold")[Exercise for depression],
     text[2024],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://bmj.altmetric.com/details/159533224/")[Altmetric: 95 news outlets, 1,500+ X posts, 15 YouTube creators, 5 Wikipedia pages]. #link("https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html")[CNN], #link("https://www.goodmorningamerica.com/video/107264638")[Good Morning America], #link("https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf")[The Times], #link("https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102")[ABC Radio], #link("https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa")[The Australian], #link("https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441")[The Conversation], #link("https://natgeo.nikkeibp.co.jp//atcl/news/25/101700570/")[National Geographic]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://bmj.altmetric.com/details/159533224/")[Altmetric: 95 news outlets, 1,500+ X posts, 15 YouTube creators, 5 Wikipedia pages]. #link("https://www.cnn.com/2024/02/14/health/exercise-treat-depression-wellness/index.html")[CNN], #link("https://www.goodmorningamerica.com/video/107264638")[Good Morning America], #link("https://www.youtube.com/watch?v=ClZOcT1wPWw")[PBS NewsHour], #link("https://www.thetimes.co.uk/article/d1236a53-6ab4-4f32-bc64-730823dbbfaf")[The Times], #link("https://www.abc.net.au/listen/programs/healthreport/how-good-is-exercise-for-depression/103521102")[ABC Radio], #link("https://www.theaustralian.com.au/nation/worlds-biggest-study-shows-exercise-can-be-five-times-as-effective-as-ssris/news-story/e1bb1699c0019674aa98047d1c431efa")[The Australian], #link("https://theconversation.com/running-or-yoga-can-help-beat-depression-research-shows-even-if-exercise-is-the-last-thing-you-feel-like-223441")[The Conversation], #link("https://natgeo.nikkeibp.co.jp//atcl/news/25/101700570/")[National Geographic]]
 ]
 
 #block(above: 1em, below: 0.6em)[
