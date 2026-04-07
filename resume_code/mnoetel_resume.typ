@@ -43,14 +43,19 @@
 // ── Title-case helper (lowercase small words except first) ──
 #let small-words = ("a", "an", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "on", "or", "so", "the", "to", "up", "yet")
 #let title-case(s) = {
-  let words = lower(s).split(" ")
-  words.enumerate().map(((i, w)) => {
-    if i == 0 or w not in small-words {
-      upper(w.first()) + w.slice(1)
-    } else {
-      w
-    }
-  }).join(" ")
+  // Preserve already-lowercase short tokens (e.g., "bmj")
+  if s == lower(s) and s.len() < 10 {
+    s
+  } else {
+    let words = lower(s).split(" ")
+    words.enumerate().map(((i, w)) => {
+      if i == 0 or w not in small-words {
+        upper(w.first()) + w.slice(1)
+      } else {
+        w
+      }
+    }).join(" ")
+  }
 }
 
 // ── Custom publication entry ──
@@ -326,7 +331,7 @@
     text(weight: "bold")[Risks from advanced artificial intelligence],
     text[2024],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News],#link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News], #link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
 ]
 
 #block(above: 1em, below: 0.6em)[
@@ -363,7 +368,7 @@
 = Invited Talks & Government Briefings
 
 #resume-item[
-  - *Government briefings*: Ministry of Education, Republic of China – Taiwan (2025); Australian Depts of Industry, Science and Resources (2025), Education (2025), and Health, Disability and Ageing (2024).
+  - *Government briefings*: Indonesian Ministry of Communication and Digital Affairs (2026); Ministry of Education, Republic of China – Taiwan (2025); Australian Depts of Industry, Science and Resources (2025), Education (2025), and Health, Disability and Ageing (2024).
   - *Invited talks*: University of Pennsylvania, Master of Behavioral and Decision Sciences (2026); Universitas Indonesia (2025, 2026); EAGxAustralia keynotes/workshops (2019, 2022, 2023, 2025); Berkeley Effective Altruism (2022); HERDSA (2023); NASPSPA, Hawaii (2022); Prevention of Falls CRE (2022); Sports Medicine Australia (2020); AdvanceHE Teaching and Learning Conference (2021).
 ]
 
@@ -384,8 +389,8 @@
 #resume-entry(
   title: "Honours Primary Supervisor",
   location: "",
-  date: "2023–2025",
-  description: "Teams of ~20 Honours students (2024, 2025); Tabi Ward, Keira Wallace, Jake Morril (2023)",
+  date: "2023–2026",
+  description: "43 Honours students from 2023–2026",
 )
 
 = Service & Engagement

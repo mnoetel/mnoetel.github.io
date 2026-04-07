@@ -15,6 +15,10 @@ EXCLUDE_JOURNALS = [
     "The Health & Fitness Journal of Canada",
 ]
 
+JOURNAL_RENAMES = {
+    "BMJ-BRITISH MEDICAL JOURNAL": "bmj",
+}
+
 
 def main():
     pubs, _ = get_publications(orcid="0000-0002-6563-8203", use_cache=True)
@@ -41,6 +45,11 @@ def main():
         p["impact_factor"] = metrics.get("impact_factor")
         p["hot_paper"] = metrics.get("hot_paper", False)
         p["esi_most_cited"] = metrics.get("esi_most_cited", False)
+
+    # Apply journal renames
+    for p in pubs:
+        if p["journal"] in JOURNAL_RENAMES:
+            p["journal"] = JOURNAL_RENAMES[p["journal"]]
 
     # Sort by year (desc), then citations (desc)
     pubs.sort(key=lambda x: (-x["year"], -x["cites"]))
