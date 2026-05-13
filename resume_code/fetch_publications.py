@@ -15,6 +15,12 @@ EXCLUDE_JOURNALS = [
     "The Health & Fitness Journal of Canada",
 ]
 
+# WoS records misattributed to this ORCID (someone else's paper carrying the wrong AI tag).
+# Fix upstream at orcid.org or by filing a WoS record correction; entries here are a backstop.
+EXCLUDE_UTS = {
+    "WOS:001179439900001",  # Gallo, Daniele (2023). Article 267 TFEU. Eur. J. Legal Studies.
+}
+
 JOURNAL_RENAMES = {
     "BMJ-BRITISH MEDICAL JOURNAL": "bmj",
 }
@@ -23,11 +29,12 @@ JOURNAL_RENAMES = {
 def main():
     pubs, _ = get_publications(orcid="0000-0002-6563-8203", use_cache=True)
 
-    # Filter out errata and excluded venues
+    # Filter out errata, excluded venues, and misattributed records
     pubs = [
         p for p in pubs
         if p["doc_type"] != "Correction"
         and p["journal"] not in EXCLUDE_JOURNALS
+        and p["wos_ut"] not in EXCLUDE_UTS
         and p["year"] is not None
     ]
 

@@ -72,10 +72,10 @@
   let parts = ()
   if pub.cites > 10 {
     let cite_word = if pub.cites == 1 { "citation" } else { "citations" }
-    parts.push(str(pub.cites) + " " + cite_word)
+    parts.push(strong(str(pub.cites) + " " + cite_word))
   }
   if pub.cnci != none and pub.cnci > 1 {
-    parts.push("CNCI: " + str(pub.cnci))
+    parts.push(strong("CNCI: " + str(pub.cnci)))
   }
   let metrics_line = parts.join(" | ")
 
@@ -89,7 +89,8 @@
       #linebreak()
       #text(fill: luma(80), style: "italic")[#title-case(pub.journal)]
       #if parts.len() > 0 {
-        text(fill: luma(80))[ --- #metrics_line]
+        text(fill: luma(80))[ --- ]
+        metrics_line
       }
     ]
   ]
@@ -158,7 +159,7 @@
   - *High-impact evidence synthesis*: Lead author, network meta-analysis of exercise for depression (_BMJ_, Altmetric > 1,400; 100M+ media reach). Publications in my fields' top journals: _Nature Human Behaviour_, _Psychological Bulletin_, _Review of Educational Research_.
   - *Competitive funding*: Chief Investigator on AU\$3.7M Category 1 grants (NHMRC, MRFF, ARC).
   - *Transparent & truth-seeking*: Embed pre-registration, open data/code; lead multi-institution teams using Agile & Scrum.
-  - *Metrics of excellence* (Web of Science): h-index #strong[#str(metrics.h_index)]; m-index #strong[#str(metrics.m_index)] (>2 = 'outstanding scientist'); #strong[#str(metrics.pct_top10)%] of papers in top-10% most-cited; mean CNCI #strong[#str(metrics.mean_cnci)] (1.0 = world average).
+  - *Metrics of excellence* (Web of Science): h-index *#metrics.h_index*; m-index *#metrics.m_index* (>2 = 'outstanding scientist'); *#str(metrics.pct_top10)%* of papers in top-10% most-cited; mean CNCI *#metrics.mean_cnci* — my work is cited almost #calc.round(metrics.mean_cnci, digits: 0)× the world average (1.0).
 ]
 
 = Skills
@@ -283,6 +284,7 @@
 
 = Awards
 
+#award-entry("Alumni Excellence Award", "Emmanuel College, The University of Queensland", "2025")
 #award-entry("Vice-Chancellor's Award for Excellence in Teaching", "Australian Catholic University", "2021")
 #award-entry("Vice-Chancellor's Staff Excellence Award: Research & Research Partnership", "Australian Catholic University – iPLAY Team", "2021")
 #award-entry("Excellence and Innovation in Public Health Education and Research (Team)", "CAPHIA – iPLAY Team", "2021")
