@@ -25,6 +25,18 @@ JOURNAL_RENAMES = {
     "BMJ-BRITISH MEDICAL JOURNAL": "bmj",
 }
 
+# The WoS Core Collection per-record times-cited count occasionally collapses during
+# re-indexing, dropping far below the true count. When that happens, cross-check against
+# InCites TOT_CITES and the paper's ESI most-cited / CNCI status, then pin the last-known-good
+# value here until WoS recovers. Re-check periodically and remove the entry once the live
+# API count climbs back above the override (otherwise this silently caps a growing count).
+CITES_OVERRIDE = {
+    # Noetel et al. (2024) BMJ exercise-for-depression network meta-analysis.
+    # WoS API returned 59 on 2026-06-16 (was 398 in May; InCites TOT_CITES=347 same day).
+    # ESI most-cited, CNCI 38.51, 99.97th percentile — 59 is clearly a re-indexing glitch.
+    "WOS:001195817800009": 398,
+}
+
 
 def main():
     pubs, _ = get_publications(orcid="0000-0002-6563-8203", use_cache=True)
@@ -57,6 +69,21 @@ def main():
     for p in pubs:
         if p["journal"] in JOURNAL_RENAMES:
             p["journal"] = JOURNAL_RENAMES[p["journal"]]
+
+    # Apply citation overrides for records where the WoS API count has glitched low.
+    # Warn (don't silently raise) if the live count has caught up — that means the
+    # override is now stale and should be removed.
+    for p in pubs:
+        if p["wos_ut"] in CITES_OVERRIDE:
+            override = CITES_OVERRIDE[p["wos_ut"]]
+            if p["cites"] > override:
+                print(
+                    f"WARNING: live cites ({p['cites']}) for {p['wos_ut']} now exceed "
+                    f"override ({override}); remove this stale CITES_OVERRIDE entry."
+                )
+            else:
+                print(f"Override: {p['wos_ut']} cites {p['cites']} -> {override}")
+                p["cites"] = override
 
     # Sort by year (desc), then citations (desc)
     pubs.sort(key=lambda x: (-x["year"], -x["cites"]))

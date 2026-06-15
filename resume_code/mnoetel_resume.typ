@@ -40,6 +40,18 @@
 #let metrics = data.metrics
 #let pubs = data.publications
 
+// ── Thousands separator (e.g. 2960 -> "2,960") ──
+#let thousands(n) = {
+  let s = str(n)
+  let groups = ()
+  while s.len() > 3 {
+    groups.insert(0, s.slice(s.len() - 3))
+    s = s.slice(0, s.len() - 3)
+  }
+  groups.insert(0, s)
+  groups.join(",")
+}
+
 // ── Title-case helper (lowercase small words except first) ──
 #let small-words = ("a", "an", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "on", "or", "so", "the", "to", "up", "yet")
 #let title-case(s) = {
@@ -76,6 +88,11 @@
   }
   if pub.cnci != none and pub.cnci > 1 {
     parts.push(strong("CNCI: " + str(pub.cnci)))
+  }
+  // ESI "Highly Cited" papers sit in the top 1% by citations for their field & year —
+  // flag them as a mark of prestige.
+  if pub.at("esi_most_cited", default: false) == true {
+    parts.push(text(fill: rgb("#053C45"))[#strong[★ Top 1% cited (ESI)]])
   }
   let metrics_line = parts.join(" | ")
 
@@ -159,7 +176,7 @@
   - *High-impact evidence synthesis*: Lead author, network meta-analysis of exercise for depression (_BMJ_, Altmetric > 1,400; 100M+ media reach). Publications in my fields' top journals: _Nature Human Behaviour_, _Psychological Bulletin_, _Review of Educational Research_.
   - *Competitive funding*: Chief Investigator on AU\$3.7M Category 1 grants (NHMRC, MRFF, ARC).
   - *Transparent & truth-seeking*: Embed pre-registration, open data/code; lead multi-institution teams using Agile & Scrum.
-  - *Metrics of excellence* (Web of Science): h-index *#metrics.h_index*; m-index *#metrics.m_index* (>2 = 'outstanding scientist'); *#str(metrics.pct_top10)%* of papers in top-10% most-cited; mean CNCI *#metrics.mean_cnci* — my work is cited almost #calc.round(metrics.mean_cnci, digits: 0)× the world average (1.0).
+  - *Metrics of excellence* (Web of Science): *#thousands(metrics.total_citations)* citations; h-index *#metrics.h_index*; m-index *#metrics.m_index* (>2 = 'outstanding scientist'); *#str(metrics.pct_top10)%* of papers in top-10% most-cited; mean CNCI *#metrics.mean_cnci* — my work is cited almost #calc.round(metrics.mean_cnci, digits: 0)× the world average (1.0).
 ]
 
 = Skills
@@ -295,7 +312,7 @@
 
 // ── Dynamic Publications ──
 
-= Publications (#str(metrics.n_pubs) total; #str(metrics.total_citations) citations; h-index: #str(metrics.h_index))
+= Publications (#str(metrics.n_pubs) total; #thousands(metrics.total_citations) citations; h-index: #str(metrics.h_index))
 
 #for pub in pubs {
   pub-entry(pub)
