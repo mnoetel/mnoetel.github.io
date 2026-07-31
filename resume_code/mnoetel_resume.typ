@@ -301,6 +301,7 @@
 
 = Awards
 
+#award-entry("Young Tall Poppy Science Award (Queensland)", "Australian Institute of Policy & Science", "2026")
 #award-entry("Alumni Excellence Award", "Emmanuel College, The University of Queensland", "2025")
 #award-entry("Vice-Chancellor's Award for Excellence in Teaching", "Australian Catholic University", "2021")
 #award-entry("Vice-Chancellor's Staff Excellence Award: Research & Research Partnership", "Australian Catholic University – iPLAY Team", "2021")

@@ -74,11 +74,11 @@ ext-js:
 <div id="about-out" class="page-section grey-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; padding-left: 1.5rem; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
-    <p>I’m an academic working at the intersection of <strong>psychology, evidence synthesis, and AI governance</strong>. My mission is to reduce the worst risks from advanced AI and help people do the most good they can.</p>
+    <p>The people building AI think there’s a real chance it goes catastrophically wrong. The odds seem higher than we’d ever accept from planes or power plants. My research measures that gap between the risks we’re taking and the risks we’d accept, and builds the evidence to close it.</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa fa-bullseye"></span><strong>Research & policy:</strong> Track record of <a href = "https://www.scopus.com/authid/detail.uri?authorId=57190857713">highly cited research</a> that influences policy; expert in systematic reviews, meta-analyses, and Delphi studies.</li>
-      <li><span class="fa-li fa fa-chalkboard-teacher"></span><strong>Teaching & mentorship:</strong> 3,000+ learners including 50+ postgraduate researchers, eight teaching awards, average rating 4.8 / 5.</li>
-      <li><span class="fa-li fa fa-globe"></span><strong>Impact:</strong> Chair and Director of <a href = "https://eaa.org.au">Effective Altruism Australia</a>, Cited in Australia’s <em>Safe & Responsible AI</em> report, the 2024 <em>International AI Safety Report</em>, and WHO guidelines.</li>
+      <li><span class="fa-li fa fa-shield-alt"></span><strong>Mapping what could go wrong:</strong> With <a href="https://futuretech.mit.edu" target="_blank">MIT FutureTech</a>, I help run the <a href="https://airisk.mit.edu" target="_blank">AI Risk Repository</a>, the field’s reference catalogue of AI risks (cited in the <em>International AI Safety Report</em>), and led <a href="https://aigovernance.org.au" target="_blank">Australia’s largest surveys of attitudes to AI risk</a>, which found the public expects aviation-grade safety.</li>
+      <li><span class="fa-li fa fa-bullseye"></span><strong>Evidence people trust:</strong> Track record of <a href = "https://www.scopus.com/authid/detail.uri?authorId=57190857713">highly cited</a> systematic reviews and meta-analyses (<em>BMJ</em>, <em>Nature Human Behaviour</em>) cited in WHO guidelines and government policy; briefings to ministers and departments in Australia, Indonesia, and Taiwan.</li>
+      <li><span class="fa-li fa fa-globe"></span><strong>Doing the most good:</strong> Chair and Director of <a href = "https://eaa.org.au">Effective Altruism Australia</a>, distributing $7.5M a year to charities with the strongest evidence behind them.</li>
     </ul>
     <p>Originally from Sydney but fell in love with a Queenslander. Proud dad of three gorgeous boys.</p>
   </div>
@@ -119,7 +119,7 @@ ext-js:
     <ul class="fa-ul">
       <li><span class="fa-li fa fa-layer-group"></span><strong>Evidence synthesis:</strong> systematic reviews, network meta‑analysis, rapid reviews</li>
       <li><span class="fa-li fa fa-code"></span><strong>Data & tooling:</strong> R, tidyverse, R Markdown, GitHub, OSF</li>
-      <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana — CI on AU$3.7M competitive grants</li>
+      <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana; CI on AU$3.7M competitive grants</li>
       <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair, <a href = "eaa.org.au">Effective Altruism Australia</a> (AU$6M granted annually)</li>
       <li><span class="fa-li fa fa-bullhorn"></span><strong>Science communication:</strong> policy briefs, explainer videos, tier‑1 media</li>
       <li><span class="fa-li fa fa-chalkboard"></span><strong>Pedagogy:</strong> instructional design, online learning at scale</li>
@@ -149,6 +149,7 @@ ext-js:
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
 
      <ul class="fa-ul">
+        <li class="media-item"><span class="fa-li fa fa-trophy"></span><strong>2026 Young Tall Poppy Science Award (Queensland)</strong> – <a href="https://aips.net.au/tall-poppy-campaign/" target="_blank">Australian Institute of Policy & Science</a>, recognising excellence in research and science communication.</li>
         <li class="media-item">
             <span class="fa-li fa fa-newspaper"></span>
             <strong>Selected Media Features:</strong>
