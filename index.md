@@ -149,7 +149,7 @@ ext-js:
      <h2 class="section-title"><span class="fa fa-tv"></span> Media & Talks</h2>
 
      <ul class="fa-ul">
-        <li class="media-item"><span class="fa-li fa fa-trophy"></span><strong>2026 Young Tall Poppy Science Award (Queensland)</strong> – <a href="https://aips.net.au/tall-poppy-campaign/" target="_blank">Australian Institute of Policy & Science</a>, recognising excellence in research and science communication.</li>
+        <li class="media-item"><span class="fa-li fa fa-trophy"></span><strong>2026 Young Tall Poppy Science Award (Queensland)</strong> – <a href="https://aips.org.au/2026-young-tall-poppy-science-award-winners" target="_blank">Australian Institute of Policy & Science</a>, recognising excellence in research and science communication.</li>
         <li class="media-item">
             <span class="fa-li fa fa-newspaper"></span>
             <strong>Selected Media Features:</strong>
