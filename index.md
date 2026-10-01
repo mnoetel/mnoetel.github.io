@@ -74,13 +74,13 @@ ext-js:
 <div id="about-out" class="page-section grey-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; padding-left: 1.5rem; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
-    <p>The people building AI think there’s a real chance it goes catastrophically wrong. The odds seem higher than we’d ever accept from planes or power plants. My research measures that gap between the risks we’re taking and the risks we’d accept, and builds the evidence to close it.</p>
+    <p>Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Professor at the University of Queensland, a Research Affiliate at MIT, and Chair of Effective Altruism Australia.</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa fa-shield-alt"></span><strong>Mapping what could go wrong:</strong> With <a href="https://futuretech.mit.edu" target="_blank">MIT FutureTech</a>, I help run the <a href="https://airisk.mit.edu" target="_blank">AI Risk Repository</a>, the field’s reference catalogue of AI risks (cited in the <em>International AI Safety Report</em>), and led <a href="https://aigovernance.org.au" target="_blank">Australia’s largest surveys of attitudes to AI risk</a>, which found the public expects aviation-grade safety.</li>
+      <li><span class="fa-li fa fa-shield-alt"></span><strong>Mapping what could go wrong:</strong> With <a href="https://futuretech.mit.edu" target="_blank">MIT FutureTech</a>, he helps run the <a href="https://airisk.mit.edu" target="_blank">AI Risk Repository</a>, the field’s reference catalogue of AI risks (cited in the <em>International AI Safety Report</em>), and led <a href="https://aigovernance.org.au" target="_blank">Australia’s largest surveys of attitudes to AI risk</a>, which found the public expects aviation-grade safety.</li>
       <li><span class="fa-li fa fa-bullseye"></span><strong>Evidence people trust:</strong> Track record of <a href = "https://www.scopus.com/authid/detail.uri?authorId=57190857713">highly cited</a> systematic reviews and meta-analyses (<em>BMJ</em>, <em>Nature Human Behaviour</em>) cited in WHO guidelines and government policy; briefings to ministers and departments in Australia, Indonesia, and Taiwan.</li>
       <li><span class="fa-li fa fa-globe"></span><strong>Doing the most good:</strong> Chair and Director of <a href = "https://eaa.org.au">Effective Altruism Australia</a>, distributing $7.5M a year to charities with the strongest evidence behind them.</li>
     </ul>
-    <p>Originally from Sydney but fell in love with a Queenslander. Proud dad of three gorgeous boys.</p>
+    <p>Originally from Sydney, he fell in love with a Queenslander and is a proud dad of three gorgeous boys.</p>
   </div>
 </div>
 

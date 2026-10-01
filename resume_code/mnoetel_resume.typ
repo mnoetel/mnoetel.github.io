@@ -151,7 +151,7 @@
 = Summary
 
 #resume-item[
-  I work to reduce catastrophic risks from advanced AI while helping others do the most good they can. My work integrates consensus-building, evidence synthesis, and scalable public communication to deliver policy-ready guidance at the pace of frontier AI.
+  Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Professor at the University of Queensland, a Research Affiliate at MIT, and Chair of Effective Altruism Australia.
 ]
 
 = Select AI Governance Contributions
@@ -173,10 +173,10 @@
 = Research Excellence
 
 #resume-item[
-  - *High-impact evidence synthesis*: Lead author, network meta-analysis of exercise for depression (_BMJ_, Altmetric > 1,400; 100M+ media reach). Publications in my fields' top journals: _Nature Human Behaviour_, _Psychological Bulletin_, _Review of Educational Research_.
+  - *High-impact evidence synthesis*: Lead author, network meta-analysis of exercise for depression (_BMJ_, Altmetric > 1,400; 100M+ media reach). Publications in his fields' top journals: _Nature Human Behaviour_, _Psychological Bulletin_, _Review of Educational Research_.
   - *Competitive funding*: Chief Investigator on AU\$3.7M Category 1 grants (NHMRC, MRFF, ARC).
   - *Transparent & truth-seeking*: Embed pre-registration, open data/code; lead multi-institution teams using Agile & Scrum.
-  - *Metrics of excellence* (Web of Science): *#thousands(metrics.total_citations)* citations; h-index *#metrics.h_index*; m-index *#metrics.m_index* (>2 = 'outstanding scientist'); *#str(metrics.pct_top10)%* of papers in top-10% most-cited; mean CNCI *#metrics.mean_cnci* — my work is cited almost #calc.round(metrics.mean_cnci, digits: 0)× the world average (1.0).
+  - *Metrics of excellence* (Web of Science): *#thousands(metrics.total_citations)* citations; h-index *#metrics.h_index*; m-index *#metrics.m_index* (>2 = 'outstanding scientist'); *#str(metrics.pct_top10)%* of papers in top-10% most-cited; mean CNCI *#metrics.mean_cnci*, so his work is cited almost #calc.round(metrics.mean_cnci, digits: 0)× the world average (1.0).
 ]
 
 = Skills
@@ -349,9 +349,9 @@
     columns: (1fr, auto),
     align: (left, right),
     text(weight: "bold")[Risks from advanced artificial intelligence],
-    text[2024],
+    text[2024–2026],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News], #link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://www.youtube.com/watch?v=tuXwBaJLOsc")[ABC News], #link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News], #link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
 ]
 
 #block(above: 1em, below: 0.6em)[
