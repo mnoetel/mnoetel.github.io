@@ -31,10 +31,8 @@ JOURNAL_RENAMES = {
 # value here until WoS recovers. Re-check periodically and remove the entry once the live
 # API count climbs back above the override (otherwise this silently caps a growing count).
 CITES_OVERRIDE = {
-    # Noetel et al. (2024) BMJ exercise-for-depression network meta-analysis.
-    # WoS API returned 59 on 2026-06-16 (was 398 in May; InCites TOT_CITES=347 same day).
-    # ESI most-cited, CNCI 38.51, 99.97th percentile — 59 is clearly a re-indexing glitch.
-    "WOS:001195817800009": 398,
+    # (empty) The 2024 BMJ NMA override (WOS:001195817800009, pinned at 398) was removed
+    # 2026-10-12 once the live count recovered to 592.
 }
 
 

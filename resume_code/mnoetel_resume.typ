@@ -293,7 +293,7 @@
   description: "",
 )
 #resume-entry(
-  title: "Registered Psychologist",
+  title: "Psychologist",
   location: "AHPRA",
   date: "2012–Present",
   description: "",
@@ -301,7 +301,7 @@
 #resume-entry(
   title: "Board Approved Supervisor",
   location: "AHPRA",
-  date: "2015–Present",
+  date: "2015–2026",
   description: "",
 )
 
