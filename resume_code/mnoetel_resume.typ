@@ -166,7 +166,7 @@
 
 #resume-item[
   - *Award-winning educator*: 9 national & institutional awards, incl. Australian Award for University Teaching & Vice-Chancellor's Award for Excellence. Mean student rating 4.8/5 across 2,390 students.
-  - *Public science communicator*: 10 _Conversation_ articles (250K+ reads); media interviews for CNN, BBC, ABC, PBS NewsHour, The Times, including TV and live radio; invited to brief federal parliamentarians.
+  - *Public science communicator*: 10 _Conversation_ articles (250K+ reads); op-ed in the _Australian Financial Review_; media interviews for CNN, BBC, ABC, PBS NewsHour, The Times, including TV and live radio; invited to brief federal parliamentarians.
   - *Chair*, Effective Altruism Australia since 2021 – stewarding AU\$7.5M+/yr to cost-effective global-health and climate programs.
 ]
 
@@ -351,7 +351,7 @@
     text(weight: "bold")[Risks from advanced artificial intelligence],
     text[2024–2026],
   )
-  #text(size: 0.9em, fill: luma(80))[#link("https://www.youtube.com/watch?v=tuXwBaJLOsc")[ABC News], #link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News], #link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
+  #text(size: 0.9em, fill: luma(80))[#link("https://www.afr.com/technology/what-if-ai-doom-saying-is-in-effect-common-sense-20260925-p60zwd")[Australian Financial Review (op-ed)], #link("https://www.youtube.com/watch?v=tuXwBaJLOsc")[ABC News], #link("https://news.uq.edu.au/2026-01-australias-ai-safety-gap-4000-times-bigger-you-think")[The Courier-Mail], #link("https://www.youtube.com/watch?v=sykH8buTxYY")[Ten News], #link("https://www.smartcompany.com.au/artificial-intelligence/aussies-concerned-ai-risk-government/")[SmartCompany], #link("https://theconversation.com/if-we-dont-control-the-ai-industry-it-could-end-up-controlling-us-warn-two-chilling-new-books-266067")[The Conversation], #link("https://theconversation.com/80-of-australians-think-ai-risk-is-a-global-priority-the-government-needs-to-step-up-225175")[The Conversation]]
 ]
 
 #block(above: 1em, below: 0.6em)[
