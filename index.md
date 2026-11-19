@@ -122,7 +122,7 @@ ext-js:
       <li><span class="fa-li fa fa-layer-group"></span><strong>Evidence synthesis:</strong> systematic reviews, network meta‑analysis, rapid reviews</li>
       <li><span class="fa-li fa fa-code"></span><strong>Data & tooling:</strong> R, tidyverse, R Markdown, GitHub, OSF</li>
       <li><span class="fa-li fa fa-project-diagram"></span><strong>Project leadership:</strong> Agile, Scrum, Asana; CI on AU$3.7M competitive grants</li>
-      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair (2021–2026) and Director, <a href = "https://eaa.org.au">Effective Altruism Australia</a> (AU$6M granted annually)</li>
+      <li><span class="fa-li fa fa-hand-holding-usd"></span><strong>Non‑profit governance:</strong> Chair (2021–2026) and Director, <a href = "https://eaa.org.au">Effective Altruism Australia</a> (AU$7.5M granted annually)</li>
       <li><span class="fa-li fa fa-bullhorn"></span><strong>Science communication:</strong> policy briefs, explainer videos, tier‑1 media</li>
       <li><span class="fa-li fa fa-chalkboard"></span><strong>Pedagogy:</strong> instructional design, online learning at scale</li>
     </ul>
