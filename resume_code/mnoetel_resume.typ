@@ -151,7 +151,7 @@
 = Summary
 
 #resume-item[
-  Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Program Officer at Coefficient Giving, an Associate Professor at the University of Queensland (currently on leave), a Research Affiliate at MIT, and Chair of Effective Altruism Australia.
+  Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Program Officer at Coefficient Giving, an Associate Professor at the University of Queensland (currently on leave), a Research Affiliate at MIT, and a Director of Effective Altruism Australia, which he chaired from 2021 to 2026.
 ]
 
 = Select AI Governance Contributions
@@ -167,7 +167,7 @@
 #resume-item[
   - *Award-winning educator*: 9 national & institutional awards, incl. Australian Award for University Teaching & Vice-Chancellor's Award for Excellence. Mean student rating 4.8/5 across 2,390 students.
   - *Public science communicator*: 10 _Conversation_ articles (250K+ reads); media interviews for CNN, BBC, ABC, PBS NewsHour, The Times, including TV and live radio; invited to brief federal parliamentarians.
-  - *Chair*, Effective Altruism Australia since 2021 – stewarding AU\$7.5M+/yr to cost-effective global-health and climate programs.
+  - *Chair*, Effective Altruism Australia, 2021–2026 – stewarded AU\$7.5M+/yr to cost-effective global-health and climate programs.
 ]
 
 = Research Excellence
@@ -428,7 +428,7 @@
   description: "",
 )
 #resume-entry(
-  title: "Director and Chairperson",
+  title: "Director (Chairperson 2021–2026)",
   location: "Effective Altruism Australia",
   date: "2021–Present",
   description: [Stewarding AU\$7.5M+/yr to cost-effective programs],
