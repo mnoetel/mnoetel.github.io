@@ -8,8 +8,8 @@
     phone: "(+61) 414 822 353",
     linkedin: "mnoetel",
     positions: (
-      "Associate Professor",
-      "The University of Queensland",
+      "Associate Program Officer",
+      "Coefficient Giving",
     ),
   ),
   profile-picture: image("mnoetel_circle.png"),
@@ -151,7 +151,7 @@
 = Summary
 
 #resume-item[
-  Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Professor at the University of Queensland, a Research Affiliate at MIT, and Chair of Effective Altruism Australia.
+  Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Program Officer at Coefficient Giving, an Associate Professor at the University of Queensland (currently on leave), a Research Affiliate at MIT, and Chair of Effective Altruism Australia.
 ]
 
 = Select AI Governance Contributions
@@ -239,10 +239,16 @@
   description: "Double Major: Psychology; Computational Science",
 )
 
-= Academic Experience
+= Professional Experience
 
 #resume-entry(
-  title: "Associate Professor",
+  title: "Associate Program Officer",
+  location: "Coefficient Giving",
+  date: "2026–Present",
+  description: "",
+)
+#resume-entry(
+  title: "Associate Professor (on leave)",
   location: "The University of Queensland",
   date: "2025–Present",
   description: "School of Psychology",

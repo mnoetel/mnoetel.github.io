@@ -61,7 +61,7 @@ ext-js:
 
 # Michael Noetel {#title}
 
-## Associate Professor, The University of Queensland {#subtitle}
+## Associate Program Officer, Coefficient Giving {#subtitle}
 
 #### Psychology & AI Governance {#sub-subtitle}
 
@@ -74,7 +74,7 @@ ext-js:
 <div id="about-out" class="page-section grey-section cut2">
   <div id="about" style="max-width:900px; margin:0 auto; padding-left: 1.5rem; text-align:left;">
     <h2 class="section-title"><span class="fa fa-user-circle"></span> About</h2>
-    <p>Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Professor at the University of Queensland, a Research Affiliate at MIT, and Chair of Effective Altruism Australia.</p>
+    <p>Michael Noetel works to reduce the most serious risks from artificial intelligence. His research maps the ways AI could go wrong, measures how much risk the public is willing to accept, and finds where experts agree and disagree on what to do about it. He is an Associate Program Officer at Coefficient Giving, an Associate Professor at the University of Queensland (currently on leave), a Research Affiliate at MIT, and Chair of Effective Altruism Australia.</p>
     <ul class="fa-ul">
       <li><span class="fa-li fa fa-shield-alt"></span><strong>Mapping what could go wrong:</strong> With <a href="https://futuretech.mit.edu" target="_blank">MIT FutureTech</a>, he helps run the <a href="https://airisk.mit.edu" target="_blank">AI Risk Repository</a>, the field’s reference catalogue of AI risks (cited in the <em>International AI Safety Report</em>), and led <a href="https://aigovernance.org.au" target="_blank">Australia’s largest surveys of attitudes to AI risk</a>, which found the public expects aviation-grade safety.</li>
       <li><span class="fa-li fa fa-bullseye"></span><strong>Evidence people trust:</strong> Track record of <a href = "https://www.scopus.com/authid/detail.uri?authorId=57190857713">highly cited</a> systematic reviews and meta-analyses (<em>BMJ</em>, <em>Nature Human Behaviour</em>) cited in WHO guidelines and government policy; briefings to ministers and departments in Australia, Indonesia, and Taiwan.</li>
@@ -102,6 +102,8 @@ ext-js:
             <span class="fa-li fa fa-university"></span>
             <h3>Affiliations & Roles</h3>
             <ul style="margin-top: 0.5rem; list-style: disc; padding-left: 1.5rem;">
+                <li>Associate Program Officer, <strong>Coefficient Giving</strong></li>
+                <li>Associate Professor (on leave), <strong>The University of Queensland</strong></li>
                 <li>Affiliate Researcher, <strong>MIT FutureTech</strong></li>
                 <li>Faculty Member, <strong>FLI AI Existential Safety Community</strong></li>
                 <li>Facilitator, <strong>AGI Safety Governance Fundamentals</strong></li>
